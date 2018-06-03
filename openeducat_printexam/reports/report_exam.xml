@@ -1,0 +1,92 @@
+<?xml version="1.0" ?>
+
+<odoo>
+	<report id="action_report"
+		model="op.exam"
+		string="print exam"
+		report_type="qweb-pdf"
+		name="openeducat_printexam.report_template"/>
+		
+	<template id="report_template">
+		<t t-call="report.html_container">
+				<t t-call="report.external_layout">
+					<div class="page">
+						<div>
+						<div class="row" style="margin-top:+250px;">
+							<div class="col-xs-6">
+							</div>
+						</div>
+							<table class="table table-condensed">
+										<tr style="width:100%;">
+											<th style="width:20%;">
+												<strong Style="font-size:20px" >Sesion</strong>
+											</th>
+											<th style="width:20%;">
+												<strong Style="font-size:20px" >name</strong> 
+											</th>
+											<th style="width:20%;">
+												<strong Style="font-size:20px" >subject</strong> 
+											</th>
+											<th style="width:20%;">
+												<strong Style="font-size:20px" >exam</strong> 
+											</th>
+											<th style="width:20%;">
+												<strong Style="font-size:20px" >start time</strong> 
+											</th>
+											<th style="width:20%;">
+												<strong Style="font-size:20px" >end time</strong> 
+											</th>
+											<th style="width:20%;">
+												<strong Style="font-size:20px" >state</strong> 
+											</th>
+											<th style="width:20%;">
+												<strong Style="font-size:20px" >note</strong> 
+											</th>
+											<th style="width:20%;">
+												<strong Style="font-size:20px" >total marks</strong> 
+											</th>
+											<th style="width:20%;">
+												<strong Style="font-size:20px" >min marks</strong> 
+											</th>
+										</tr>		
+								<t t-foreach="docs" t-as="doc">	
+										<tr>
+											<th style="width:20%;">
+												<p Style="font-size:15px" t-field="doc.session_id"/>
+											</th>
+											<th style="width:20%;">
+												<p Style="font-size:15px" t-field="doc.name"/>
+											</th>
+											<th style="width:20%;">
+												<p Style="font-size:15px" t-field="doc.subject_id"/>
+											</th>
+											<th style="width:20%;">
+												<p Style="font-size:15px" t-field="doc.exam_code"/>
+											</th>
+											<th style="width:20%;">
+												<p Style="font-size:15px" t-field="doc.start_time"/>
+											</th>
+											<th style="width:20%;">
+												<p Style="font-size:15px" t-field="doc.end_time"/>
+											</th>
+											<th style="width:20%;">
+												<p Style="font-size:15px" t-field="doc.state"/>
+											</th>
+											<th style="width:20%;">
+												<p Style="font-size:15px" t-field="doc.note"/>
+											</th>
+											<th style="width:20%;">
+												<p Style="font-size:15px" t-field="doc.total_marks"/>
+											</th>
+											<th style="width:20%;">
+												<p Style="font-size:15px" t-field="doc.min_marks"/>
+											</th>
+										</tr>
+								</t>
+							</table>
+					</div>
+					</div>	
+			</t>
+		</t>
+	</template>
+</odoo>

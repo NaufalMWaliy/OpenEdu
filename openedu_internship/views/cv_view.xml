@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<record model="ir.ui.view" id="cv_form_view">
+		<field name="name">cv.form</field>
+		<field name="model">oe.cv</field>
+		<field name="arch" type="xml">
+			<form string="Curriculum Vitae Form">
+				<sheet>
+					<field name="image" widget="image" class="oe_right oe_avatar"/>
+					<group>
+						<field name="student_id" placeholder="Student" options="{'no_create_edit': True}"/>
+					</group>
+					<notebook colspan="4">
+						<page name="personal_information" string="Personal Information">
+							<group col="4" colspan="4" name="personal_detail">
+								<field name="full_name"/>
+								<field name="display_full_name"
+									attrs="{'invisible': True}"/>
+								<field name="short_name"/>
+								<field name="phone"/>
+								<field name="email"/>
+								<field name="gender"/>
+								<field name="birth_date"/>
+								<field name="nationality"/>
+							</group>
+							<group string="Address Detail">
+								<label for="street" string="Address" />
+								<div name="div_address">
+									<field name="street" placeholder="Street..."/>
+									<field name="street2" placeholder="Street2" />
+									<div class="address_format">
+										<field name="city" placeholder="City" style="width: 40%%"/>
+										<field name="state_id"
+											class="oe_no_button"
+											placeholder="State"
+											style="width: 37%%"
+											options='{"no_open": True}'/>
+										<field name="zip"
+											placeholder="ZIP"
+											style="width: 20%%" />
+									</div>
+									<field name="country_id"
+										placeholder="Country" class="oe_no_button" options='{"no_open": True}' />
+								</div>
+							</group>
+						</page>
+						<page name="education" string="Education">
+						</page>
+						<page name="organization" string="Organization">
+						</page>
+						<page name="additional_information" string="Additional Information">
+						</page>
+					</notebook>
+				</sheet>
+			</form>
+		</field>
+	</record>
+
+	<record model="ir.actions.act_window" id="cv_form_action">
+		<field name="name">Curriculum Vitae</field>
+		<field name="res_model">oe.cv</field>
+		<field name="view_type">form</field>
+		<field name="view_mode">tree,form</field>
+	</record>
+
+	<menuitem id="main_internship_menu" name="Internship"/>
+	<menuitem id="cv_menu" name="Curriculum Vitae" parent="main_internship_menu" action="cv_form_action"/>
+</odoo>

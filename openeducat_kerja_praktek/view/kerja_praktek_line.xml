@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+  <data>
+    <record id="view_kerjapraktek_line_tree" model="ir.ui.view">
+      <field name="name">kerjapraktek.line</field>
+      <field name="model">op.kerjapraktek.line</field>
+      <field name="priority" eval="8" />
+      <field name="arch" type="xml">
+        <tree string="kerjapraktek line">
+          <field name="kerja_praktek_id" />
+          <field name="student_id" />
+          <field name="cv" />
+          <field name="pengajuan_perusahaan" />
+        </tree>
+      </field>
+    </record>
+    <record id="view_kerjapraktek_line_form" model="ir.ui.view">
+      <field name="name">kerjapraktek.form</field>
+      <field name="model">op.kerjapraktek.line</field>
+      <field name="priority" eval="8" />
+      <field name="arch" type="xml">
+        <form string="Attendance Line">
+          <sheet>
+            <group col="4" colspan="4">
+              <field name="kerja_praktek_id" />
+      				<field name="student_id"/>
+      				<field name="cv" />
+      				<field name="pengajuan_perusahaan" />
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+	</data>
+</odoo>

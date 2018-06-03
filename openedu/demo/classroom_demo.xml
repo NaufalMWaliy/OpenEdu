@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<data noupdate="1">
+		<record id="op_classroom_1" model="op.classroom">
+      <field name="code">D101</field>
+      <field name="name">D101-Kelas</field>
+      <field name="capacity">35</field>
+    </record>
+    <record id="op_classroom_2" model="op.classroom">
+      <field name="code">D102</field>
+      <field name="name">Lab. Multimedia</field>
+      <field name="capacity">35</field>
+    </record>
+    <record id="op_classroom_3" model="op.classroom">
+      <field name="code">D105</field>
+      <field name="name">D105-Kelas</field>
+      <field name="capacity">35</field>
+    </record>
+    <record id="op_classroom_4" model="op.classroom">
+      <field name="code">D106</field>
+      <field name="name">Lab. SDB</field>
+      <field name="capacity">35</field>
+    </record>
+    <record id="op_classroom_5" model="op.classroom">
+      <field name="code">D107</field>
+      <field name="name">Lab. RPL</field>
+      <field name="capacity">35</field>
+    </record>
+    <record id="op_classroom_6" model="op.classroom">
+      <field name="code">D108</field>
+      <field name="name">D108-Kelas</field>
+      <field name="capacity">35</field>
+    </record>
+    <record id="op_classroom_7" model="op.classroom">
+      <field name="code">D111</field>
+      <field name="name">D111-Kelas</field>
+      <field name="capacity">35</field>
+    </record>
+    <record id="op_classroom_8" model="op.classroom">
+      <field name="code">D112</field>
+      <field name="name">D112-Kelas</field>
+      <field name="capacity">35</field>
+    </record>
+    <record id="op_classroom_9" model="op.classroom">
+      <field name="code">D115</field>
+      <field name="name">Lab. Database</field>
+      <field name="capacity">35</field>
+    </record>
+    <record id="op_classroom_10" model="op.classroom">
+      <field name="code">D217</field>
+      <field name="name">D217-Kelas</field>
+      <field name="capacity">35</field>
+    </record>
+    <record id="op_classroom_11" model="op.classroom">
+      <field name="code">D116</field>
+      <field name="name">Lab. Sistem</field>
+      <field name="capacity">35</field>
+    </record>
+    <record id="op_classroom_12" model="op.classroom">
+      <field name="code">D219</field>
+      <field name="name">D219-Kelas</field>
+      <field name="capacity">35</field>
+    </record>
+    <record id="op_classroom_13" model="op.classroom">
+      <field name="code">D223</field>
+      <field name="name">D223-Kelas</field>
+      <field name="capacity">35</field>
+    </record>
+    <record id="op_classroom_14" model="op.classroom">
+      <field name="code">D113</field>
+      <field name="name">R. Dosen Praktik</field>
+      <field name="capacity">10</field>
+    </record>
+    <record id="op_classroom_15" model="op.classroom">
+      <field name="code">D224</field>
+      <field name="name">D224-Kelas</field>
+      <field name="capacity">35</field>
+    </record>	
+	</data>
+</odoo>

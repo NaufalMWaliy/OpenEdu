@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="op_faculty_1" model="op.faculty">
+            <field name="title" ref="base.res_partner_title_mister" />
+            <field name="name">Ade</field>
+            <field name="middle_name">Chandra</field>
+            <field name="last_name">Nugraha</field>
+            <field name="gender">male</field>
+            <field name="birth_date">1973-12-27</field>
+            <field name="email">chandra@jtk.polban.ac.id</field>
+            <field name="city">Bandung</field>
+			<field name="country_id" ref="base.id" />
+            <field name="nationality" ref="base.id" />
+        </record>
+
+        <record id="op_faculty_2" model="op.faculty">
+            <field name="title" ref="base.res_partner_title_miss" />
+            <field name="name">Ani</field>
+            <field name="last_name">Rahmani</field>
+            <field name="gender">female</field>
+            <field name="birth_date">1968-10-14</field>
+            <field name="email">anirahma@jtk.polban.ac.id</field>
+            <field name="city">Tasikmalaya</field>
+			<field name="country_id" ref="base.id" />
+            <field name="nationality" ref="base.id" />
+        </record>
+
+        <record id="op_faculty_3" model="op.faculty">
+            <field name="title" ref="base.res_partner_title_mister" />
+            <field name="name">Bambang</field>
+            <field name="last_name">Wisnuadhi</field>
+            <field name="gender">male</field>
+            <field name="birth_date">1972-01-06</field>
+            <field name="email">bwisnu@jtk.polban.ac.id</field>
+            <field name="city">Majalengka</field>
+			<field name="country_id" ref="base.id" />
+            <field name="nationality" ref="base.id" />
+        </record>
+
+        <record id="op_faculty_4" model="op.faculty">
+            <field name="title" ref="base.res_partner_title_mister" />
+            <field name="name">Dewa</field>
+            <field name="middle_name">Gede</field>
+            <field name="last_name">Patra</field>
+            <field name="gender">male</field>
+            <field name="birth_date">1959-08-25</field>
+            <field name="email">dewagp@jtk.polban.ac.id</field>
+            <field name="city">Malang</field>
+			<field name="country_id" ref="base.id" />
+            <field name="nationality" ref="base.id" />
+        </record>
+
+        <record id="op_faculty_5" model="op.faculty">
+            <field name="title" ref="base.res_partner_title_mister" />
+            <field name="name">Didik</field>
+            <field name="middle_name">Suwito</field>
+            <field name="last_name">Pribadi</field>
+            <field name="gender">male</field>
+            <field name="birth_date">1960-12-26</field>
+            <field name="email">didik@jtk.polban.ac.id</field>
+            <field name="city">Pasuruan</field>
+			<field name="country_id" ref="base.id" />
+            <field name="nationality" ref="base.id" />
+        </record>
+
+        <record id="op_faculty_6" model="op.faculty">
+            <field name="title" ref="base.res_partner_title_mister" />
+            <field name="name">Irawan</field>
+            <field name="last_name">Tamrin</field>
+            <field name="gender">male</field>
+            <field name="birth_date">1962-08-15</field>
+            <field name="email">irawan@jtk.polban.ac.id</field>
+            <field name="city">Jambi</field>
+			<field name="country_id" ref="base.id" />
+            <field name="nationality" ref="base.id" />
+        </record>
+
+        <record id="op_faculty_7" model="op.faculty">
+            <field name="title" ref="base.res_partner_title_mister" />
+            <field name="name">Joe</field>
+            <field name="middle_name">Lian</field>
+            <field name="last_name">Min</field>
+            <field name="gender">male</field>
+            <field name="birth_date">1966-10-18</field>
+            <field name="email">joelianmin@jtk.polban.ac.id</field>
+            <field name="city">Tasikmalaya</field>
+			<field name="country_id" ref="base.id" />
+            <field name="nationality" ref="base.id" />
+        </record>
+
+        <record id="op_faculty_8" model="op.faculty">
+            <field name="title" ref="base.res_partner_title_miss" />
+            <field name="name">Nurjannah</field>
+            <field name="last_name">Syakrani</field>
+            <field name="gender">female</field>
+            <field name="birth_date">1963-12-13</field>
+            <field name="email">nurjannah@jtk.polban.ac.id</field>
+			<field name="city">Murung Pudak</field>
+			<field name="country_id" ref="base.id" />
+            <field name="nationality" ref="base.id" />
+        </record>
+
+        <record id="op_faculty_9" model="op.faculty">
+            <field name="title" ref="base.res_partner_title_miss" />
+            <field name="name">Santi</field>
+            <field name="last_name">Sundari</field>
+            <field name="gender">female</field>
+            <field name="birth_date">1971-09-03</field>
+            <field name="email">santi@jtk.polban.ac.id</field>
+            <field name="city">Bandung</field>
+			<field name="country_id" ref="base.id" />
+            <field name="nationality" ref="base.id" />
+        </record>
+
+        <record id="op_faculty_10" model="op.faculty">
+            <field name="title" ref="base.res_partner_title_miss" />
+            <field name="name">Tati</field>
+            <field name="last_name">Susilawati</field>
+            <field name="gender">female</field>
+            <field name="birth_date">1964-04-12</field>
+            <field name="email">tati@jtk.polban.ac.id</field>
+            <field name="city">Tasikmalaya</field>
+			<field name="country_id" ref="base.id" />
+            <field name="nationality" ref="base.id" />
+        </record>
+		
+		<record id="op_faculty_11" model="op.faculty">
+            <field name="title" ref="base.res_partner_title_mister" />
+            <field name="name">Urip</field>
+            <field name="middle_name">Teguh</field>
+            <field name="last_name">Setijohatmo</field>
+            <field name="gender">male</field>
+            <field name="birth_date">1960-09-28</field>
+            <field name="email">urip@jtk.polban.ac.id</field>
+            <field name="city">Jakarta</field>
+			<field name="country_id" ref="base.id" />
+            <field name="nationality" ref="base.id" />
+        </record>
+
+        <record id="op_faculty_12" model="op.faculty">
+            <field name="title" ref="base.res_partner_title_mister" />
+            <field name="name">Yudi</field>
+            <field name="last_name">Widhiyasana</field>
+            <field name="gender">male</field>
+            <field name="birth_date">1974-07-18</field>
+            <field name="email">goezthel@jtk.polban.ac.id</field>
+            <field name="city">Bandung</field>
+			<field name="country_id" ref="base.id" />
+            <field name="nationality" ref="base.id" />
+        </record>
+
+        <record id="op_faculty_13" model="op.faculty">
+            <field name="title" ref="base.res_partner_title_mister" />
+            <field name="name">Amir</field>
+            <field name="last_name">Hamzah</field>
+            <field name="gender">male</field>
+            <field name="birth_date">1962-07-22</field>
+            <field name="email">amir@jtk.polban.ac.id</field>
+            <field name="city">Jakarta</field>
+			<field name="country_id" ref="base.id" />
+            <field name="nationality" ref="base.id" />
+        </record>
+
+        <record id="op_faculty_14" model="op.faculty">
+            <field name="title" ref="base.res_partner_title_mister" />
+            <field name="name">Eddy</field>
+            <field name="middle_name">Bambang</field>
+            <field name="last_name">Soewono</field>
+            <field name="gender">male</field>
+            <field name="birth_date">1961-01-14</field>
+            <field name="email">ebang@jtk.polban.ac.id</field>
+            <field name="city">Lumajang</field>
+			<field name="country_id" ref="base.id" />
+            <field name="nationality" ref="base.id" />
+        </record>
+
+        <record id="op_faculty_15" model="op.faculty">
+            <field name="title" ref="base.res_partner_title_mister" />
+            <field name="name">Ferry</field>
+            <field name="last_name">Feirizal</field>
+            <field name="gender">male</field>
+            <field name="birth_date">1959-05-21</field>
+            <field name="email">ferry@jtk.polban.ac.id</field>
+            <field name="city">Cimahi</field>
+			<field name="country_id" ref="base.id" />
+            <field name="nationality" ref="base.id" />
+        </record>
+
+        <record id="op_faculty_16" model="op.faculty">
+            <field name="title" ref="base.res_partner_title_mister" />
+            <field name="name">Jonner</field>
+            <field name="last_name">Hutahaean</field>
+            <field name="gender">male</field>
+            <field name="birth_date">1962-10-21</field>
+            <field name="email">jonnerh@jtk.polban.ac.id</field>
+            <field name="city">Tapanuli</field>
+			<field name="country_id" ref="base.id" />
+            <field name="nationality" ref="base.id" />
+        </record>
+
+        <record id="op_faculty_17" model="op.faculty">
+            <field name="title" ref="base.res_partner_title_miss" />
+            <field name="name">Transmissia</field>
+            <field name="last_name">Semiawan</field>
+            <field name="gender">female</field>
+            <field name="birth_date">1961-11-09</field>
+            <field name="email">transmissia@jtk.polban.ac.id</field>
+            <field name="city">Jakarta</field>
+			<field name="country_id" ref="base.id" />
+            <field name="nationality" ref="base.id" />
+        </record>
+
+        <record id="op_faculty_18" model="op.faculty">
+            <field name="title" ref="base.res_partner_title_mister" />
+            <field name="name">Setiadi</field>
+            <field name="last_name">Rachmat</field>
+            <field name="gender">male</field>
+            <field name="birth_date">1969-04-04</field>
+            <field name="email">setiadi@jtk.polban.ac.id</field>
+			<field name="country_id" ref="base.id" />
+            <field name="nationality" ref="base.id" />
+        </record>
+
+        <record id="op_faculty_19" model="op.faculty">
+            <field name="title" ref="base.res_partner_title_mister" />
+            <field name="name">Suprihanto</field>
+            <field name="last_name">Suprihanto</field>
+            <field name="gender">male</field>
+            <field name="birth_date">1963-03-16</field>
+            <field name="email">sprh@jtk.polban.ac.id</field>
+            <field name="city">Cimahi</field>
+			<field name="country_id" ref="base.id" />
+            <field name="nationality" ref="base.id" />
+        </record>
+
+        <record id="op_faculty_20" model="op.faculty">
+            <field name="title" ref="base.res_partner_title_miss" />
+            <field name="name">Iwan</field>
+            <field name="last_name">Awaludin</field>
+            <field name="gender">male</field>
+            <field name="birth_date">1976-04-18</field>
+            <field name="email">awaludin@jtk.polban.ac.id</field>
+            <field name="city">Ciamis</field>
+			<field name="country_id" ref="base.id" />
+            <field name="nationality" ref="base.id" />
+        </record>
+
+		<record id="op_faculty_21" model="op.faculty">
+            <field name="title" ref="base.res_partner_title_mister" />
+            <field name="name">Titis</field>
+            <field name="last_name">Sutisna</field>
+            <field name="gender">male</field>
+            <field name="birth_date">1971-08-01</field>
+            <field name="email">titis@jtk.polban.ac.id</field>
+            <field name="city">Bandung</field>
+			<field name="country_id" ref="base.id" />
+            <field name="nationality" ref="base.id" />
+        </record>
+
+        <record id="op_faculty_22" model="op.faculty">
+            <field name="title" ref="base.res_partner_title_mister" />
+            <field name="name">Irwan</field>
+            <field name="last_name">Setiawan</field>
+            <field name="gender">male</field>
+            <field name="birth_date">1980-04-19</field>
+            <field name="email">irwan@jtk.polban.ac.id</field>
+            <field name="city">Bandung</field>
+			<field name="country_id" ref="base.id" />
+            <field name="nationality" ref="base.id" />
+        </record>
+
+        <record id="op_faculty_23" model="op.faculty">
+            <field name="title" ref="base.res_partner_title_mister" />
+            <field name="name">Priyanto</field>
+            <field name="last_name">Hidayatullah</field>
+            <field name="gender">male</field>
+            <field name="birth_date">1981-04-07</field>
+            <field name="email">priyanto@jtk.polban.ac.id</field>
+            <field name="city">Bandung</field>
+			<field name="country_id" ref="base.id" />
+            <field name="nationality" ref="base.id" />
+        </record>
+
+        <record id="op_faculty_24" model="op.faculty">
+            <field name="title" ref="base.res_partner_title_mister" />
+            <field name="name">Yadhi</field>
+            <field name="middle_name">Adhitya</field>
+            <field name="last_name">Permana</field>
+            <field name="gender">male</field>
+            <field name="birth_date">1979-12-24</field>
+            <field name="email">yadhi@jtk.polban.ac.id</field>
+            <field name="city">Bandung</field>
+			<field name="country_id" ref="base.id" />
+            <field name="nationality" ref="base.id" />
+        </record>
+
+        <record id="op_faculty_25" model="op.faculty">
+            <field name="title" ref="base.res_partner_title_miss" />
+            <field name="name">Ida</field>
+            <field name="last_name">Suhartini</field>
+            <field name="gender">female</field>
+            <field name="birth_date">1980-12-12</field>
+            <field name="email">ida@jtk.polban.ac.id</field>
+            <field name="city">Depok,Bogor</field>
+			<field name="country_id" ref="base.id" />
+            <field name="nationality" ref="base.id" />
+        </record>
+
+        <record id="op_faculty_26" model="op.faculty">
+            <field name="title" ref="base.res_partner_title_miss" />
+            <field name="name">Fitri</field>
+            <field name="last_name">Diani</field>
+            <field name="gender">female</field>
+            <field name="birth_date">1980-09-16</field>
+            <field name="email">fitri@jtk.polban.ac.id</field>
+            <field name="city">Bandung</field>
+			<field name="country_id" ref="base.id" />
+            <field name="nationality" ref="base.id" />
+        </record>
+
+        <record id="op_faculty_27" model="op.faculty">
+            <field name="title" ref="base.res_partner_title_mister" />
+            <field name="name">Ghifari</field>
+            <field name="last_name">Munawar</field>
+            <field name="gender">male</field>
+            <field name="birth_date">1986-04-12</field>
+            <field name="email">ghifari.munawar@jtk.polban.ac.id</field>
+            <field name="city">Bandung</field>
+			<field name="country_id" ref="base.id" />
+            <field name="nationality" ref="base.id" />
+        </record>
+
+        <record id="op_faculty_28" model="op.faculty">
+            <field name="title" ref="base.res_partner_title_miss" />
+            <field name="name">Ade</field>
+            <field name="last_name">Hodijah</field>
+            <field name="gender">female</field>
+            <field name="birth_date">1985-02-10</field>
+            <field name="email">adehodijah@jtk.polban.ac.id</field>
+			<field name="city">Karawang</field>
+			<field name="country_id" ref="base.id" />
+            <field name="nationality" ref="base.id" />
+        </record>
+
+        <record id="op_faculty_29" model="op.faculty">
+            <field name="title" ref="base.res_partner_title_mister" />
+            <field name="name">Zulkifli</field>
+            <field name="last_name">Arsyad</field>
+            <field name="gender">male</field>
+            <field name="birth_date">1971-07-05</field>
+            <field name="email">zulkifli.arsyad@jtk.polban.ac.id</field>
+            <field name="city">Bandung</field>
+			<field name="country_id" ref="base.id" />
+            <field name="nationality" ref="base.id" />
+        </record>
+
+        <record id="op_faculty_30" model="op.faculty">
+            <field name="title" ref="base.res_partner_title_miss" />
+            <field name="name">Rahil</field>
+            <field name="last_name">Jumiyani</field>
+            <field name="gender">female</field>
+            <field name="birth_date">1988-07-05</field>
+            <field name="email">rahil@jtk.polban.ac.id</field>
+            <field name="city">Aceh</field>
+			<field name="country_id" ref="base.id" />
+            <field name="nationality" ref="base.id" />
+        </record>
+    </data>
+</odoo>

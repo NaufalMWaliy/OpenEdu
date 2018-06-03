@@ -1,0 +1,948 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="op_student_1" model="op.student">
+            <field name="title" ref="base.res_partner_title_miss" />
+            <field name="name">Achmad</field>
+            <field name="middle_name">Fadhitya</field>
+            <field name="last_name">Muharram</field>
+            <field name="gender">m</field>
+            <field name="birth_date">1998-04-28</field>
+            <field name="blood_group">A-</field>
+            <field name="email">achmad.fadhitya.tif16@polban.ac.id</field>
+            <field name="city">Bandung</field>
+            <field name="type">contact</field>
+            <field name="customer">True</field>
+            <field name="active">True</field>            
+            <!-- <field name="partner_id" ref="op_res_partner_1" /> -->
+        </record>
+
+        <record id="op_student_2" model="op.student">
+            <field name="title" ref="base.res_partner_title_mister" />
+            <field name="name">Adhitya</field>
+            <field name="middle_name">Noor</field>
+            <field name="last_name">Muslim</field>
+            <field name="gender">m</field>
+            <field name="birth_date">1998-06-03</field>
+            <field name="blood_group">AB+</field>
+            <field name="email">adhitya.noor.tif16@polban.ac.id</field>
+            <field name="city">Bandung</field>
+            <field name="type">contact</field>
+            <field name="customer">True</field>
+            <field name="active">True</field>
+            <!-- <field name="partner_id" ref="op_res_partner_2" />             -->
+        </record>
+
+        <record id="op_student_3" model="op.student">
+            <field name="title" ref="base.res_partner_title_miss" />
+            <field name="name">Aditia</field>
+            <field name="middle_name"></field>
+            <field name="last_name">Nugraha</field>
+            <field name="gender">m</field>
+            <field name="birth_date">1998-04-05</field>
+            <field name="blood_group">AB+</field>
+            <field name="email">aditia.nugraha.tif16@polban.ac.id</field>
+            <field name="city">Bandung</field>
+            <field name="type">contact</field>
+            <field name="customer">True</field>
+            <field name="active">True</field>
+            <!-- <field name="partner_id" ref="op_res_partner_3" />             -->
+        </record>
+
+        <record id="op_student_4" model="op.student">
+            <field name="title" ref="base.res_partner_title_miss" />
+            <field name="name">Agit</field>
+            <field name="middle_name"></field>
+            <field name="last_name">Prasetya</field>
+            <field name="gender">m</field>
+            <field name="birth_date">1998-12-20</field>
+            <field name="blood_group">AB-</field>
+            <field name="email">agit.prasetya.tif16@polban.ac.id</field>
+            <field name="city">Bandung</field>
+            <field name="type">contact</field>
+            <field name="customer">True</field>
+            <field name="active">True</field>
+            <!-- <field name="partner_id" ref="op_res_partner_4" />             -->
+        </record>
+
+        <record id="op_student_5" model="op.student">
+            <field name="title" ref="base.res_partner_title_mister" />
+            <field name="name">Agustina</field>
+            <field name="middle_name"></field>
+            <field name="last_name">Bau</field>
+            <field name="gender">f</field>
+            <field name="birth_date">1998-08-14</field>
+            <field name="blood_group">AB+</field>
+            <field name="email">agustina.bau.tif16@polban.ac.id</field>
+            <field name="city">Bandung</field>
+            <field name="type">contact</field>
+            <field name="customer">True</field>
+            <field name="active">True</field>
+            <!-- <field name="partner_id" ref="op_res_partner_5" />             -->
+        </record>
+
+        <record id="op_student_6" model="op.student">
+            <field name="title" ref="base.res_partner_title_mister" />
+            <field name="name">Akmal</field>
+            <field name="middle_name">Muhammad</field>
+            <field name="last_name">Kristanto</field>
+            <field name="gender">m</field>
+            <field name="birth_date">1998-09-12</field>
+            <field name="blood_group">B-</field>
+            <field name="email">akmal.muhammad.tif16@polban.ac.id</field>
+            <field name="city">Bandung</field>
+            <field name="type">contact</field>
+            <field name="customer">True</field>
+            <field name="active">True</field>
+            <!-- <field name="partner_id" ref="op_res_partner_6" />             -->
+        </record>
+
+        <record id="op_student_7" model="op.student">
+            <field name="title" ref="base.res_partner_title_mister" />
+            <field name="name">Alpin</field>
+            <field name="middle_name"></field>
+            <field name="last_name">Jestinera</field>
+            <field name="gender">m</field>
+            <field name="birth_date">1998-11-03</field>
+            <field name="blood_group">A+</field>
+            <field name="email">alpin.jestinera.tif16@polban.ac.id</field>
+            <field name="city">Bandung</field>
+            <field name="type">contact</field>
+            <field name="customer">True</field>
+            <field name="active">True</field>
+            <!-- <field name="partner_id" ref="op_res_partner_7" />             -->
+        </record>
+
+        <record id="op_student_8" model="op.student">
+            <field name="title" ref="base.res_partner_title_miss" />
+            <field name="name">Delvin</field>
+            <field name="middle_name"></field>
+            <field name="last_name">Prestiadi</field>
+            <field name="gender">m</field>
+            <field name="birth_date">1998-11-12</field>
+            <field name="blood_group">B-</field>
+            <field name="email">delvin.prestiadi.tif16@polban.ac.id</field>
+            <field name="city">Bandung</field>
+            <field name="type">contact</field>
+            <field name="customer">True</field>
+            <field name="active">True</field>
+            <!-- <field name="partner_id" ref="op_res_partner_8" />             -->
+        </record>
+
+        <record id="op_student_9" model="op.student">
+            <field name="title" ref="base.res_partner_title_miss" />
+            <field name="name">Dewi</field>
+            <field name="middle_name"></field>
+            <field name="last_name">Roaza</field>
+            <field name="gender">f</field>
+            <field name="birth_date">1998-11-13</field>
+            <field name="blood_group">AB+</field>
+            <field name="email">dewi.roaza.tif16@polban.ac.id</field>
+            <field name="city">Bandung</field>
+            <field name="type">contact</field>
+            <field name="customer">True</field>
+            <field name="active">True</field>
+            <!-- <field name="partner_id" ref="op_res_partner_9" />             -->
+        </record>
+
+        <record id="op_student_10" model="op.student">
+            <field name="title" ref="base.res_partner_title_mister" />
+            <field name="name">Auliya</field>
+            <field name="middle_name">Aqma</field>
+            <field name="last_name">Dinillah</field>
+            <field name="gender">f</field>
+            <field name="birth_date">1998-02-04</field>
+            <field name="blood_group">O+</field>
+            <field name="email">auliya.aqma.tif16@polban.ac.id</field>
+            <field name="city">Bandung</field>
+            <field name="type">contact</field>
+            <field name="customer">True</field>
+            <field name="active">True</field>
+            <!-- <field name="partner_id" ref="op_res_partner_10" />             -->
+        </record>
+
+        <record id="op_student_11" model="op.student">
+            <field name="title" ref="base.res_partner_title_mister" />
+            <field name="name">Cecep</field>
+            <field name="middle_name"></field>
+            <field name="last_name">Sutisna</field>
+            <field name="gender">m</field>
+            <field name="birth_date">1998-01-13</field>
+            <field name="blood_group">O+</field>
+            <field name="email">cecep.sutisna.tif16@polban.ac.id</field>
+            <field name="city">Bandung</field>
+            <field name="type">contact</field>
+            <field name="customer">True</field>
+            <field name="active">True</field>
+            <!-- <field name="partner_id" ref="op_res_partner_11" />             -->
+        </record>
+
+        <record id="op_student_12" model="op.student">
+            <field name="title" ref="base.res_partner_title_mister" />
+            <field name="name">Daffa</field>
+            <field name="middle_name"></field>
+            <field name="last_name">Isnalfitra</field>
+            <field name="gender">m</field>
+            <field name="birth_date">1997-02-18</field>
+            <field name="blood_group">B+</field>
+            <field name="email">daffa.isnalfitra.tif16@polban.ac.id</field>
+            <field name="city">Bandung</field>
+            <field name="type">contact</field>
+            <field name="customer">True</field>
+            <field name="active">True</field>
+            <!-- <field name="partner_id" ref="op_res_partner_12" />             -->
+        </record>
+
+        <record id="op_student_13" model="op.student">
+            <field name="title" ref="base.res_partner_title_miss" />
+            <field name="name">Dhika</field>
+            <field name="middle_name">Bagus</field>
+            <field name="last_name">Danindra</field>
+            <field name="gender">m</field>
+            <field name="birth_date">1998-04-07</field>
+            <field name="blood_group">B+</field>
+            <field name="email">dhika.bagus.tif16@polban.ac.id</field>
+            <field name="city">Bandung</field>
+            <field name="type">contact</field>
+            <field name="customer">True</field>
+            <field name="active">True</field>
+            <!-- <field name="partner_id" ref="op_res_partner_13" />             -->
+        </record>
+
+        <record id="op_student_14" model="op.student">
+            <field name="title" ref="base.res_partner_title_mister" />
+            <field name="name">Dede</field>
+            <field name="middle_name"></field>
+            <field name="last_name">Diana</field>
+            <field name="gender">m</field>
+            <field name="birth_date">1997-01-17</field>
+            <field name="blood_group">O+</field>
+            <field name="email">diana.tif16@polban.ac.id</field>
+            <field name="city">Bandung</field>
+            <field name="type">contact</field>
+            <field name="customer">True</field>
+            <field name="active">True</field>
+            <!-- <field name="partner_id" ref="op_res_partner_14" />             -->
+        </record>
+
+        <record id="op_student_15" model="op.student">
+            <field name="title" ref="base.res_partner_title_miss" />
+            <field name="name">Fachri</field>
+            <field name="middle_name">Hammad</field>
+            <field name="last_name">FP</field>
+            <field name="gender">m</field>
+            <field name="birth_date">1998-06-21</field>
+            <field name="blood_group">AB-</field>
+            <field name="email">fachri.hammad.tif16@polban.ac.id</field>
+            <field name="city">Bandung</field>
+            <field name="type">contact</field>
+            <field name="customer">True</field>
+            <field name="active">True</field>
+            <!-- <field name="partner_id" ref="op_res_partner_15" />             -->
+        </record>
+
+        <record id="op_student_16" model="op.student">
+            <field name="title" ref="base.res_partner_title_mister" />
+            <field name="name">Fadhil</field>
+            <field name="middle_name"></field>
+            <field name="last_name">Shofian</field>
+            <field name="gender">m</field>
+            <field name="birth_date">1997-08-01</field>
+            <field name="blood_group">O+</field>
+            <field name="email">fadhil.shofian.tif16@polban.ac.id</field>
+            <field name="city">Bandung</field>
+            <field name="type">contact</field>
+            <field name="customer">True</field>
+            <field name="active">True</field>
+            <!-- <field name="partner_id" ref="op_res_partner_16" />             -->
+        </record>
+
+        <record id="op_student_17" model="op.student">
+            <field name="title" ref="base.res_partner_title_miss" />
+            <field name="name">Fadhlan</field>
+            <field name="middle_name">Ariq</field>
+            <field name="last_name">Mahmudin</field>
+            <field name="gender">m</field>
+            <field name="birth_date">1998-07-08</field>
+            <field name="blood_group">B-</field>
+            <field name="email">fadhlan.ariq.tif16@polban.ac.id</field>
+            <field name="city">Bandung</field>
+            <field name="type">contact</field>
+            <field name="customer">True</field>
+            <field name="active">True</field>
+            <!-- <field name="partner_id" ref="op_res_partner_17" />             -->
+        </record>
+
+        <record id="op_student_18" model="op.student">
+            <field name="title" ref="base.res_partner_title_miss" />
+            <field name="name">Faiz</field>
+            <field name="middle_name"></field>
+            <field name="last_name">Abdussalam</field>
+            <field name="gender">m</field>
+            <field name="birth_date">1998-01-21</field>
+            <field name="blood_group">AB-</field>
+            <field name="email">faiz.abdussalam.tif16@polban.ac.id</field>
+            <field name="city">Bandung</field>
+            <field name="type">contact</field>
+            <field name="customer">True</field>
+            <field name="active">True</field>
+            <!-- <field name="partner_id" ref="op_res_partner_18" />             -->
+        </record>
+
+        <record id="op_student_19" model="op.student">
+            <field name="title" ref="base.res_partner_title_miss" />
+            <field name="name">Fajar</field>
+            <field name="middle_name">Panca</field>
+            <field name="last_name">Saputra</field>
+            <field name="gender">m</field>
+            <field name="birth_date">1997-03-25</field>
+            <field name="blood_group">A+</field>
+            <field name="email">fajar.panca.tif16@polban.ac.id</field>
+            <field name="city">Bandung</field>
+            <field name="type">contact</field>
+            <field name="customer">True</field>
+            <field name="active">True</field>
+            <!-- <field name="partner_id" ref="op_res_partner_19" />             -->
+        </record>
+
+        <record id="op_student_20" model="op.student">
+            <field name="title" ref="base.res_partner_title_mister" />
+            <field name="name">Fakhri</field>
+            <field name="middle_name">Waliyyudin</field>
+            <field name="last_name">Nugraha</field>
+            <field name="gender">m</field>
+            <field name="birth_date">1998-04-14</field>
+            <field name="blood_group">B+</field>
+            <field name="email">fakhri.waliyyudin.tif16@polban.ac.id</field>
+            <field name="city">Bandung</field>
+            <field name="type">contact</field>
+            <field name="customer">True</field>
+            <field name="active">True</field>
+            <!-- <field name="partner_id" ref="op_res_partner_20" />             -->
+        </record>
+
+        <record id="op_student_21" model="op.student">
+            <field name="title" ref="base.res_partner_title_mister" />
+            <field name="name">Farel</field>
+            <field name="middle_name"></field>
+            <field name="last_name">Priambodo</field>
+            <field name="gender">m</field>
+            <field name="birth_date">1997-10-17</field>
+            <field name="blood_group">B+</field>
+            <field name="email">farel.priambodo.tif16@polban.ac.id</field>
+            <field name="city">Bandung</field>
+            <field name="type">contact</field>
+            <field name="customer">True</field>
+            <field name="active">True</field>
+            <!-- <field name="partner_id" ref="op_res_partner_21" />             -->
+        </record>
+
+        <record id="op_student_22" model="op.student">
+            <field name="title" ref="base.res_partner_title_mister" />
+            <field name="name">Fauzan</field>
+            <field name="middle_name">Akmal</field>
+            <field name="last_name">Khalqi</field>
+            <field name="gender">m</field>
+            <field name="birth_date">1998-04-11</field>
+            <field name="blood_group">B+</field>
+            <field name="email">fauzan.akmal.tif16@polban.ac.id</field>
+            <field name="city">Bandung</field>
+            <field name="type">contact</field>
+            <field name="customer">True</field>
+            <field name="active">True</field>
+            <!-- <field name="partner_id" ref="op_res_partner_22" />             -->
+        </record>
+
+        <record id="op_student_23" model="op.student">
+            <field name="title" ref="base.res_partner_title_mister" />
+            <field name="name">Fauzi</field>
+            <field name="middle_name">Nur</field>
+            <field name="last_name">Noviansyah</field>
+            <field name="gender">m</field>
+            <field name="birth_date">1998-11-25</field>
+            <field name="blood_group">B+</field>
+            <field name="email">fauzi.nur.tif16@polban.ac.id</field>
+            <field name="city">Bandung</field>
+            <field name="type">contact</field>
+            <field name="customer">True</field>
+            <field name="active">True</field>
+            <!-- <field name="partner_id" ref="op_res_partner_23" />             -->
+        </record>
+
+        <record id="op_student_24" model="op.student">
+            <field name="title" ref="base.res_partner_title_mister" />
+            <field name="name">Gerry</field>
+            <field name="middle_name">Agustian</field>
+            <field name="last_name">Juneu</field>
+            <field name="gender">m</field>
+            <field name="birth_date">1998-08-22</field>
+            <field name="blood_group">B+</field>
+            <field name="email">gerry.agustian.tif16@polban.ac.id</field>
+            <field name="city">Bandung</field>
+            <field name="type">contact</field>
+            <field name="customer">True</field>
+            <field name="active">True</field>
+            <!-- <field name="partner_id" ref="op_res_partner_24" />             -->
+        </record>
+
+        <record id="op_student_25" model="op.student">
+            <field name="title" ref="base.res_partner_title_mister" />
+            <field name="name">Haya</field>
+            <field name="middle_name">Utami</field>
+            <field name="last_name">Luthfi</field>
+            <field name="gender">f</field>
+            <field name="birth_date">1999-08-22</field>
+            <field name="blood_group">B+</field>
+            <field name="email">haya.utami.tif16@polban.ac.id</field>
+            <field name="city">Bandung</field>
+            <field name="type">contact</field>
+            <field name="customer">True</field>
+            <field name="active">True</field>
+            <!-- <field name="partner_id" ref="op_res_partner_25" />             -->
+        </record>
+
+        <record id="op_student_26" model="op.student">
+            <field name="title" ref="base.res_partner_title_mister" />
+            <field name="name">Ira</field>
+            <field name="middle_name"></field>
+            <field name="last_name">Kusnindi</field>
+            <field name="gender">f</field>
+            <field name="birth_date">1998-05-18</field>
+            <field name="blood_group">B+</field>
+            <field name="email">ira.kusnindi.tif16@polban.ac.id</field>
+            <field name="city">Bandung</field>
+            <field name="type">contact</field>
+            <field name="customer">True</field>
+            <field name="active">True</field>
+            <!-- <field name="partner_id" ref="op_res_partner_26" />             -->
+        </record>
+
+        <record id="op_student_27" model="op.student">
+            <field name="title" ref="base.res_partner_title_mister" />
+            <field name="name">Irza</field>
+            <field name="middle_name">Aprilian</field>
+            <field name="last_name">Ariandi</field>
+            <field name="gender">m</field>
+            <field name="birth_date">1998-04-24</field>
+            <field name="blood_group">B+</field>
+            <field name="email">irza.aprilian.tif16@polban.ac.id</field>
+            <field name="city">Bandung</field>
+            <field name="type">contact</field>
+            <field name="customer">True</field>
+            <field name="active">True</field>
+            <!-- <field name="partner_id" ref="op_res_partner_27" />             -->
+        </record>
+
+        <record id="op_student_28" model="op.student">
+            <field name="title" ref="base.res_partner_title_mister" />
+            <field name="name">Jeremia</field>
+            <field name="middle_name"></field>
+            <field name="last_name">Geraldi</field>
+            <field name="gender">m</field>
+            <field name="birth_date">1998-05-27</field>
+            <field name="blood_group">B+</field>
+            <field name="email">jeremia.geraldi.tif16@polban.ac.id</field>
+            <field name="city">Bandung</field>
+            <field name="type">contact</field>
+            <field name="customer">True</field>
+            <field name="active">True</field>
+            <!-- <field name="partner_id" ref="op_res_partner_28" />             -->
+        </record>
+
+        <record id="op_student_29" model="op.student">
+            <field name="title" ref="base.res_partner_title_mister" />
+            <field name="name">Kartika</field>
+            <field name="middle_name"></field>
+            <field name="last_name">Sari</field>
+            <field name="gender">f</field>
+            <field name="birth_date">1998-04-03</field>
+            <field name="blood_group">B+</field>
+            <field name="email">kartika.sari.tif16@polban.ac.id</field>
+            <field name="city">Bandung</field>
+            <field name="type">contact</field>
+            <field name="customer">True</field>
+            <field name="active">True</field>
+            <!-- <field name="partner_id" ref="op_res_partner_29" />             -->
+        </record>
+
+        <record id="op_student_30" model="op.student">
+            <field name="title" ref="base.res_partner_title_mister" />
+            <field name="name">Kivlan</field>
+            <field name="middle_name">Aziz</field>
+            <field name="last_name">Al-Falah</field>
+            <field name="gender">m</field>
+            <field name="birth_date">1999-07-16</field>
+            <field name="blood_group">B+</field>
+            <field name="email">kivla.aziz.tif16@polban.ac.id</field>
+            <field name="city">Bandung</field>
+            <field name="type">contact</field>
+            <field name="customer">True</field>
+            <field name="active">True</field>
+            <!-- <field name="partner_id" ref="op_res_partner_30" />             -->
+        </record>
+
+        <record id="op_student_31" model="op.student">
+            <field name="title" ref="base.res_partner_title_mister" />
+            <field name="name">Lucky</field>
+            <field name="middle_name"></field>
+            <field name="last_name">Ramdani</field>
+            <field name="gender">m</field>
+            <field name="birth_date">1998-01-07</field>
+            <field name="blood_group">B+</field>
+            <field name="email">lucky.ramdani.tif16@polban.ac.id</field>
+            <field name="city">Bandung</field>
+            <field name="type">contact</field>
+            <field name="customer">True</field>
+            <field name="active">True</field>
+            <!-- <field name="partner_id" ref="op_res_partner_31" />             -->
+        </record>
+
+        <record id="op_student_32" model="op.student">
+            <field name="title" ref="base.res_partner_title_mister" />
+            <field name="name">Maulana</field>
+            <field name="middle_name"></field>
+            <field name="last_name">Ibrahim</field>
+            <field name="gender">m</field>
+            <field name="birth_date">1998-03-05</field>
+            <field name="blood_group">B+</field>
+            <field name="email">maulana.ibrahim.tif16@polban.ac.id</field>
+            <field name="city">Bandung</field>
+            <field name="type">contact</field>
+            <field name="customer">True</field>
+            <field name="active">True</field>
+            <!-- <field name="partner_id" ref="op_res_partner_32" />             -->
+        </record>
+
+        <record id="op_student_33" model="op.student">
+            <field name="title" ref="base.res_partner_title_mister" />
+            <field name="name">Mohammad</field>
+            <field name="middle_name">Ridwan</field>
+            <field name="last_name">HDP</field>
+            <field name="gender">m</field>
+            <field name="birth_date">1998-09-25</field>
+            <field name="blood_group">B+</field>
+            <field name="email">mohammad.ridwan.tif16@polban.ac.id</field>
+            <field name="city">Bandung</field>
+            <field name="type">contact</field>
+            <field name="customer">True</field>
+            <field name="active">True</field>
+            <!-- <field name="partner_id" ref="op_res_partner_33" />             -->
+        </record>
+
+        <record id="op_student_34" model="op.student">
+            <field name="title" ref="base.res_partner_title_mister" />
+            <field name="name">Mufid</field>
+            <field name="middle_name"></field>
+            <field name="last_name">Jamaludin</field>
+            <field name="gender">m</field>
+            <field name="birth_date">1998-01-11</field>
+            <field name="blood_group">B+</field>
+            <field name="email">mufid.jamaludin.tif16@polban.ac.id</field>
+            <field name="city">Bandung</field>
+            <field name="type">contact</field>
+            <field name="customer">True</field>
+            <field name="active">True</field>
+            <!-- <field name="partner_id" ref="op_res_partner_34" />             -->
+        </record>
+
+        <record id="op_student_35" model="op.student">
+            <field name="title" ref="base.res_partner_title_mister" />
+            <field name="name">Mughie</field>
+            <field name="middle_name">Arief</field>
+            <field name="last_name">Mughoni S</field>
+            <field name="gender">m</field>
+            <field name="birth_date">1998-04-14</field>
+            <field name="blood_group">B+</field>
+            <field name="email">mughie.arief.tif16@polban.ac.id</field>
+            <field name="city">Bandung</field>
+            <field name="type">contact</field>
+            <field name="customer">True</field>
+            <field name="active">True</field>
+            <!-- <field name="partner_id" ref="op_res_partner_35" />             -->
+        </record>
+
+        <record id="op_student_36" model="op.student">
+            <field name="title" ref="base.res_partner_title_mister" />
+            <field name="name">Muhammad</field>
+            <field name="middle_name">Hisyam</field>
+            <field name="last_name">Anshori</field>
+            <field name="gender">m</field>
+            <field name="birth_date">1998-05-04</field>
+            <field name="blood_group">B+</field>
+            <field name="email">muhammad.hisyam.tif16@polban.ac.id</field>
+            <field name="city">Bandung</field>
+            <field name="type">contact</field>
+            <field name="customer">True</field>
+            <field name="active">True</field>
+            <!-- <field name="partner_id" ref="op_res_partner_36" />             -->
+        </record>
+
+        <record id="op_student_37" model="op.student">
+            <field name="title" ref="base.res_partner_title_mister" />
+            <field name="name">Muhammad</field>
+            <field name="middle_name">Faatih</field>
+            <field name="last_name">Syauqi</field>
+            <field name="gender">m</field>
+            <field name="birth_date">1998-04-14</field>
+            <field name="blood_group">B+</field>
+            <field name="email">muhammad.faatih.tif16@polban.ac.id</field>
+            <field name="city">Bandung</field>
+            <field name="type">contact</field>
+            <field name="customer">True</field>
+            <field name="active">True</field>
+            <!-- <field name="partner_id" ref="op_res_partner_37" />             -->
+        </record>
+
+        <record id="op_student_38" model="op.student">
+            <field name="title" ref="base.res_partner_title_mister" />
+            <field name="name">Muhammad</field>
+            <field name="middle_name"></field>
+            <field name="last_name">Fadhil</field>
+            <field name="gender">m</field>
+            <field name="birth_date">1998-09-22</field>
+            <field name="blood_group">B+</field>
+            <field name="email">muhammad.fadhil.tif16@polban.ac.id</field>
+            <field name="city">Bandung</field>
+            <field name="type">contact</field>
+            <field name="customer">True</field>
+            <field name="active">True</field>
+            <!-- <field name="partner_id" ref="op_res_partner_38" />             -->
+        </record>
+
+        <record id="op_student_39" model="op.student">
+            <field name="title" ref="base.res_partner_title_mister" />
+            <field name="name">Muhammad</field>
+            <field name="middle_name">Fikri</field>
+            <field name="last_name">Oktoriza</field>
+            <field name="gender">m</field>
+            <field name="birth_date">1998-10-27</field>
+            <field name="blood_group">B+</field>
+            <field name="email">muhammad.fikri.tif16@polban.ac.id</field>
+            <field name="city">Bandung</field>
+            <field name="type">contact</field>
+            <field name="customer">True</field>
+            <field name="active">True</field>
+            <!-- <field name="partner_id" ref="op_res_partner_39" />             -->
+        </record>
+
+        <record id="op_student_40" model="op.student">
+            <field name="title" ref="base.res_partner_title_mister" />
+            <field name="name">Muhammad</field>
+            <field name="middle_name">Fizikri</field>
+            <field name="last_name">Alfarish</field>
+            <field name="gender">m</field>
+            <field name="birth_date">1998-04-17</field>
+            <field name="blood_group">B+</field>
+            <field name="email">muhammad.fizikri.tif16@polban.ac.id</field>
+            <field name="city">Bandung</field>
+            <field name="type">contact</field>
+            <field name="customer">True</field>
+            <field name="active">True</field>
+            <!-- <field name="partner_id" ref="op_res_partner_40" />             -->
+        </record>
+
+        <record id="op_student_41" model="op.student">
+            <field name="title" ref="base.res_partner_title_mister" />
+            <field name="name">Muhammad</field>
+            <field name="middle_name">Zaid</field>
+            <field name="last_name">Al Anshori</field>
+            <field name="gender">m</field>
+            <field name="birth_date">1998-07-18</field>
+            <field name="blood_group">B+</field>
+            <field name="email">muhammad.zaid.tif16@polban.ac.id</field>
+            <field name="city">Bandung</field>
+            <field name="type">contact</field>
+            <field name="customer">True</field>
+            <field name="active">True</field>
+            <!-- <field name="partner_id" ref="op_res_partner_41" />             -->
+        </record>
+
+        <record id="op_student_42" model="op.student">
+            <field name="title" ref="base.res_partner_title_mister" />
+            <field name="name">Nadhira</field>
+            <field name="middle_name">Virliany</field>
+            <field name="last_name">Darajat</field>
+            <field name="gender">f</field>
+            <field name="birth_date">1998-10-03</field>
+            <field name="blood_group">B+</field>
+            <field name="email">nadhira.virliany.tif16@polban.ac.id</field>
+            <field name="city">Bandung</field>
+            <field name="type">contact</field>
+            <field name="customer">True</field>
+            <field name="active">True</field>
+            <!-- <field name="partner_id" ref="op_res_partner_42" />             -->
+        </record>
+
+        <record id="op_student_43" model="op.student">
+            <field name="title" ref="base.res_partner_title_mister" />
+            <field name="name">Naufal</field>
+            <field name="middle_name">Muntaaza</field>
+            <field name="last_name">Waliy Hibatullah</field>
+            <field name="gender">m</field>
+            <field name="birth_date">2000-08-11</field>
+            <field name="blood_group">B+</field>
+            <field name="email">naufal.muntaaza.tif16@polban.ac.id</field>
+            <field name="city">Bandung</field>
+            <field name="type">contact</field>
+            <field name="customer">True</field>
+            <field name="active">True</field>
+            <!-- <field name="partner_id" ref="op_res_partner_43" />             -->
+        </record>
+
+        <record id="op_student_44" model="op.student">
+            <field name="title" ref="base.res_partner_title_mister" />
+            <field name="name">Nino</field>
+            <field name="middle_name"></field>
+            <field name="last_name">Maryono</field>
+            <field name="gender">m</field>
+            <field name="birth_date">1998-03-26</field>
+            <field name="blood_group">B+</field>
+            <field name="email">nino.maryono.tif16@polban.ac.id</field>
+            <field name="city">Bandung</field>
+            <field name="type">contact</field>
+            <field name="customer">True</field>
+            <field name="active">True</field>
+            <!-- <field name="partner_id" ref="op_res_partner_44" />             -->
+        </record>
+
+        <record id="op_student_45" model="op.student">
+            <field name="title" ref="base.res_partner_title_mister" />
+            <field name="name">Novi</field>
+            <field name="middle_name"></field>
+            <field name="last_name">Lawati</field>
+            <field name="gender">f</field>
+            <field name="birth_date">1998-11-14</field>
+            <field name="blood_group">B+</field>
+            <field name="email">novilawati.tif16@polban.ac.id</field>
+            <field name="city">Bandung</field>
+            <field name="type">contact</field>
+            <field name="customer">True</field>
+            <field name="active">True</field>
+            <!-- <field name="partner_id" ref="op_res_partner_45" />             -->
+        </record>
+
+        <record id="op_student_46" model="op.student">
+            <field name="title" ref="base.res_partner_title_mister" />
+            <field name="name">Nurindah</field>
+            <field name="middle_name"></field>
+            <field name="last_name">Yuniarti</field>
+            <field name="gender">f</field>
+            <field name="birth_date">1998-06-12</field>
+            <field name="blood_group">B+</field>
+            <field name="email">nurindah.yuniarti.tif16@polban.ac.id</field>
+            <field name="city">Bandung</field>
+            <field name="type">contact</field>
+            <field name="customer">True</field>
+            <field name="active">True</field>
+            <!-- <field name="partner_id" ref="op_res_partner_46" /> -->
+        </record>
+
+        <record id="op_student_47" model="op.student">
+            <field name="title" ref="base.res_partner_title_mister" />
+            <field name="name">Nurta</field>
+            <field name="middle_name"></field>
+            <field name="last_name">Salam</field>
+            <field name="gender">m</field>
+            <field name="birth_date">1999-10-02</field>
+            <field name="blood_group">B+</field>
+            <field name="email">nurta.salam.tif16@polban.ac.id</field>
+            <field name="city">Bandung</field>
+            <field name="type">contact</field>
+            <field name="customer">True</field>
+            <field name="active">True</field>
+            <!-- <field name="partner_id" ref="op_res_partner_47" />             -->
+        </record>
+
+        <record id="op_student_48" model="op.student">
+            <field name="title" ref="base.res_partner_title_mister" />
+            <field name="name">Pega</field>
+            <field name="middle_name"></field>
+            <field name="last_name">Kurniawan</field>
+            <field name="gender">m</field>
+            <field name="birth_date">1998-02-15</field>
+            <field name="blood_group">B+</field>
+            <field name="email">pega.kurniawan.tif16@polban.ac.id</field>
+            <field name="city">Bandung</field>
+            <field name="type">contact</field>
+            <field name="customer">True</field>
+            <field name="active">True</field>
+            <!-- <field name="partner_id" ref="op_res_partner_48" />             -->
+        </record>
+
+        <record id="op_student_49" model="op.student">
+            <field name="title" ref="base.res_partner_title_mister" />
+            <field name="name">Putri</field>
+            <field name="middle_name">Dian</field>
+            <field name="last_name">Insani</field>
+            <field name="gender">f</field>
+            <field name="birth_date">1997-11-08</field>
+            <field name="blood_group">B+</field>
+            <field name="email">putri.dian.tif16@polban.ac.id</field>
+            <field name="city">Bandung</field>
+            <field name="type">contact</field>
+            <field name="customer">True</field>
+            <field name="active">True</field>
+            <!-- <field name="partner_id" ref="op_res_partner_49" />             -->
+        </record>
+
+        <record id="op_student_50" model="op.student">
+            <field name="title" ref="base.res_partner_title_mister" />
+            <field name="name">Reza</field>
+            <field name="middle_name">Dwi</field>
+            <field name="last_name">Kurniawan</field>
+            <field name="gender">m</field>
+            <field name="birth_date">1997-12-01</field>
+            <field name="blood_group">B+</field>
+            <field name="email">reza.dwi.tif16@polban.ac.id</field>
+            <field name="city">Bandung</field>
+            <field name="type">contact</field>
+            <field name="customer">True</field>
+            <field name="active">True</field>
+            <!-- <field name="partner_id" ref="op_res_partner_50" />             -->
+        </record>
+
+        <record id="op_student_51" model="op.student">
+            <field name="title" ref="base.res_partner_title_mister" />
+            <field name="name">Reza</field>
+            <field name="middle_name">Yudakusumah</field>
+            <field name="last_name">Putra Kelana</field>
+            <field name="gender">m</field>
+            <field name="birth_date">1998-06-24</field>
+            <field name="blood_group">B+</field>
+            <field name="email">reza.yudakusumah.tif16@polban.ac.id</field>
+            <field name="city">Bandung</field>
+            <field name="type">contact</field>
+            <field name="customer">True</field>
+            <field name="active">True</field>
+            <!-- <field name="partner_id" ref="op_res_partner_51" />             -->
+        </record>
+
+        <record id="op_student_52" model="op.student">
+            <field name="title" ref="base.res_partner_title_mister" />
+            <field name="name">Rizal</field>
+            <field name="middle_name">Muhammad</field>
+            <field name="last_name">Djajaatmadja</field>
+            <field name="gender">m</field>
+            <field name="birth_date">1998-04-14</field>
+            <field name="blood_group">B+</field>
+            <field name="email">rizal.muhammad.tif16@polban.ac.id</field>
+            <field name="city">Bandung</field>
+            <field name="type">contact</field>
+            <field name="customer">True</field>
+            <field name="active">True</field>
+            <!-- <field name="partner_id" ref="op_res_partner_52" />             -->
+        </record>
+
+        <record id="op_student_53" model="op.student">
+            <field name="title" ref="base.res_partner_title_mister" />
+            <field name="name">Rizka</field>
+            <field name="middle_name">Fajar</field>
+            <field name="last_name">Novia</field>
+            <field name="gender">f</field>
+            <field name="birth_date">1997-11-03</field>
+            <field name="blood_group">B+</field>
+            <field name="email">rizka.fajar.tif16@polban.ac.id</field>
+            <field name="city">Bandung</field>
+            <field name="type">contact</field>
+            <field name="customer">True</field>
+            <field name="active">True</field>
+            <!-- <field name="partner_id" ref="op_res_partner_53" />             -->
+        </record>
+
+        <record id="op_student_54" model="op.student">
+            <field name="title" ref="base.res_partner_title_mister" />
+            <field name="name">Rizky</field>
+            <field name="middle_name">Fauzan</field>
+            <field name="last_name">Bahtiar</field>
+            <field name="gender">m</field>
+            <field name="birth_date">1998-03-24</field>
+            <field name="blood_group">B+</field>
+            <field name="email">rizky.fauzan.tif16@polban.ac.id</field>
+            <field name="city">Bandung</field>
+            <field name="type">contact</field>
+            <field name="customer">True</field>
+            <field name="active">True</field>
+            <!-- <field name="partner_id" ref="op_res_partner_54" />             -->
+        </record>
+
+        <record id="op_student_55" model="op.student">
+            <field name="title" ref="base.res_partner_title_mister" />
+            <field name="name">Rohmat</field>
+            <field name="middle_name"></field>
+            <field name="last_name">Dasuqi</field>
+            <field name="gender">m</field>
+            <field name="birth_date">1997-07-18</field>
+            <field name="blood_group">B+</field>
+            <field name="email">rohmat.dasuqi.tif16@polban.ac.id</field>
+            <field name="city">Bandung</field>
+            <field name="type">contact</field>
+            <field name="customer">True</field>
+            <field name="active">True</field>
+            <!-- <field name="partner_id" ref="op_res_partner_55" />             -->
+        </record>
+
+        <record id="op_student_56" model="op.student">
+            <field name="title" ref="base.res_partner_title_mister" />
+            <field name="name">Said</field>
+            <field name="middle_name">Al</field>
+            <field name="last_name">Fakhir</field>
+            <field name="gender">m</field>
+            <field name="birth_date">1998-03-14</field>
+            <field name="blood_group">B+</field>
+            <field name="email">said.alfakhir.tif16@polban.ac.id</field>
+            <field name="city">Bandung</field>
+            <field name="type">contact</field>
+            <field name="customer">True</field>
+            <field name="active">True</field>
+            <!-- <field name="partner_id" ref="op_res_partner_56" />             -->
+        </record>
+
+        <record id="op_student_57" model="op.student">
+            <field name="title" ref="base.res_partner_title_mister" />
+            <field name="name">Taufik</field>
+            <field name="middle_name"></field>
+            <field name="last_name">Ferdiansyah</field>
+            <field name="gender">m</field>
+            <field name="birth_date">1998-02-03</field>
+            <field name="blood_group">B+</field>
+            <field name="email">taufik.ferdiansyah.tif16@polban.ac.id</field>
+            <field name="city">Bandung</field>
+            <field name="type">contact</field>
+            <field name="customer">True</field>
+            <field name="active">True</field>
+            <!-- <field name="partner_id" ref="op_res_partner_57" />             -->
+        </record>
+
+        <record id="op_student_58" model="op.student">
+            <field name="title" ref="base.res_partner_title_mister" />
+            <field name="name">Wildan</field>
+            <field name="middle_name">Muhammad</field>
+            <field name="last_name">Aqso</field>
+            <field name="gender">m</field>
+            <field name="birth_date">1998-09-02</field>
+            <field name="blood_group">B+</field>
+            <field name="email">wildan.muhammad.tif16@polban.ac.id</field>
+            <field name="city">Bandung</field>
+            <field name="type">contact</field>
+            <field name="customer">True</field>
+            <field name="active">True</field>
+            <!-- <field name="partner_id" ref="op_res_partner_58" />             -->
+        </record>
+
+        <record id="op_student_59" model="op.student">
+            <field name="title" ref="base.res_partner_title_mister" />
+            <field name="name">Wira</field>
+            <field name="middle_name">Kusuma</field>
+            <field name="last_name">Wardana</field>
+            <field name="gender">m</field>
+            <field name="birth_date">1998-05-21</field>
+            <field name="blood_group">B+</field>
+            <field name="email">wira.kusuma.tif16@polban.ac.id</field>
+            <field name="city">Bandung</field>
+            <field name="type">contact</field>
+            <field name="customer">True</field>
+            <field name="active">True</field>
+            <!-- <field name="partner_id" ref="op_res_partner_59" /> -->
+        </record>
+    </data>
+</odoo>

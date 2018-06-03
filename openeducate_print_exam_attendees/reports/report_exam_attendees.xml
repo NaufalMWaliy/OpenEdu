@@ -1,0 +1,68 @@
+<?xml version="1.0" ?>
+
+<odoo>
+	<report id="action_report"
+		model="op.exam.attendees"
+		string="print exam attendees"
+		report_type="qweb-pdf"
+		name="openeducate_print_exam_attendees.report_template"/>
+		
+	<template id="report_template">
+		<t t-call="report.html_container">
+				<t t-call="report.external_layout">
+					<div class="page">
+						<div>
+						<div class="row" style="margin-top:+250px;">
+							<div class="col-xs-6">
+							</div>
+						</div>
+							<table class="table table-condensed">
+										<tr style="width:100%;">
+											<th style="width:20%;">
+												<strong Style="font-size:20px" >Student</strong>
+											</th>
+											<th style="width:20%;">
+												<strong Style="font-size:20px" >Exam</strong> 
+											</th>
+											<th style="width:20%;">
+												<strong Style="font-size:20px" >Room</strong> 
+											</th>
+											<th style="width:20%;">
+												<strong Style="font-size:20px" >Status</strong> 
+											</th>
+											<th style="width:20%;">
+												<strong Style="font-size:20px" >Marks</strong> 
+											</th>
+											<th style="width:20%;">
+												<strong Style="font-size:20px" >Note</strong> 
+											</th>
+										</tr>		
+								<t t-foreach="docs" t-as="doc">	
+										<tr>
+											<th style="width:20%;">
+												<p Style="font-size:15px" t-field="doc.student_id"/>
+											</th>
+											<th style="width:20%;">
+												<p Style="font-size:15px" t-field="doc.exam_id"/>
+											</th>
+											<th style="width:20%;">
+												<p Style="font-size:15px" t-field="doc.room_id"/>
+											</th>
+											<th style="width:20%;">
+												<p Style="font-size:15px" t-field="doc.status"/>
+											</th>
+											<th style="width:20%;">
+												<p Style="font-size:15px" t-field="doc.marks"/>
+											</th>
+											<th style="width:20%;">
+												<p Style="font-size:15px" t-field="doc.note"/>
+											</th>
+										</tr>
+								</t>
+							</table>
+					</div>
+					</div>	
+			</t>
+		</t>
+	</template>
+</odoo>

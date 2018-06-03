@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<data>
+		<record model="ir.ui.view" id="classroom_form_view">
+			<field name="name">classroom.form</field>
+			<field name="model">op.classroom</field>
+			<field name="inherit_id" ref="openeducat_classroom.view_op_classroom_form"/>
+			<field name="arch" type="xml">
+				<xpath expr="//field[@name='capacity']" position="after">
+				    <field name="student_class_id"/>
+				</xpath>
+			</field>
+		</record>
+	</data>
+</odoo>

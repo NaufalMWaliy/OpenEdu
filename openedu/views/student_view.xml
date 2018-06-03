@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<data>
+		<record model="ir.ui.view" id="student_form_view">
+			<field name="name">student.form</field>
+      <field name="model">op.student</field>
+      <field name="inherit_id" ref="openeducat_core.view_op_student_form"/>
+      <field name="arch" type="xml">
+      	<xpath expr="//field[@name='gr_no']" position="after" col="2">
+			    <field name="class_id"/>
+			    <field name="class_of_id"/>
+				</xpath>
+			</field>
+		</record>
+		<record id="student_search_view" model="ir.ui.view">
+      <field name="name">student.search</field>
+      <field name="model">op.student</field>
+      <field name="inherit_id" ref="openeducat_core.view_op_student_search"/>
+      <field name="arch" type="xml">
+        <xpath expr="//field[@name='blood_group']" position="after">
+			    <field name="class_id"/>
+			    <field name="class_of_id"/>
+				</xpath>
+    	</field>
+  	</record>
+	</data>
+</odoo>

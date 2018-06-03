@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+	
+	<record id="op_course_1" model="op.course">
+            <field name="code">JTK</field>
+            <field name="name">Jurusan Teknik Komputer dan Informatika</field>
+            <field name="evaluation_type">GPA</field>
+            <field name="section">D3-D4-JTK</field>
+        </record>
+
+        <record id="op_course_2" model="op.course">
+            <field name="code">D3TI</field>
+            <field name="name">D3 - Teknik Informatika</field>
+            <field name="evaluation_type">GPA</field>
+            <field name="section">D3-TI</field>
+			<field name="parent_id" ref="op_course_1" />
+        </record>
+
+        <record id="op_course_3" model="op.course">
+            <field name="code">TKOS1</field>
+            <field name="name">TKO-Semester 1</field>
+            <field name="evaluation_type">GPA</field>
+            <field name="section">D3-S1</field>
+            <field name="parent_id" ref="op_course_2" />
+        </record>
+
+        <record id="op_course_4" model="op.course">
+            <field name="code">TKOS2</field>
+            <field name="name">TKO-Semester 2</field>
+            <field name="evaluation_type">GPA</field>
+            <field name="section">D3-S2</field>
+            <field name="parent_id" ref="op_course_2" />
+        </record>
+
+        <record id="op_course_5" model="op.course">
+            <field name="code">TKOS3</field>
+            <field name="name">TKO-Semester 3</field>
+            <field name="evaluation_type">GPA</field>
+            <field name="section">D3-S3</field>
+            <field name="parent_id" ref="op_course_2" />
+        </record>
+
+        <record id="op_course_6" model="op.course">
+            <field name="code">TKOS4</field>
+            <field name="name">TKO-Semester 4</field>
+            <field name="evaluation_type">GPA</field>
+            <field name="section">D3-S4</field>
+            <field name="parent_id" ref="op_course_2" />
+        </record>
+
+        <record id="op_course_7" model="op.course">
+            <field name="code">TKOS5</field>
+            <field name="name">TKO-Semester 5</field>
+            <field name="evaluation_type">GPA</field>
+            <field name="section">D3-S5</field>
+            <field name="parent_id" ref="op_course_2" />
+        </record>
+		
+		<record id="op_course_8" model="op.course">
+            <field name="code">TKOS6</field>
+            <field name="name">TKO-Semester 6</field>
+            <field name="evaluation_type">GPA</field>
+            <field name="section">D3-S6</field>
+            <field name="parent_id" ref="op_course_2" />
+        </record>
+
+		<record id="op_course_9" model="op.course">
+            <field name="code">D4TI</field>
+            <field name="name">D4 - Teknik Informatika</field>
+            <field name="evaluation_type">GPA</field>
+            <field name="section">D4-TI</field>
+			<field name="parent_id" ref="op_course_1" />
+        </record>
+
+        <record id="op_course_10" model="op.course">
+            <field name="code">TINS1</field>
+            <field name="name">TIN-Semester 1</field>
+            <field name="evaluation_type">GPA</field>
+            <field name="section">D4-S1</field>
+            <field name="parent_id" ref="op_course_9" />
+        </record>
+
+        <record id="op_course_11" model="op.course">
+            <field name="code">TINS2</field>
+            <field name="name">TIN-Semester 2</field>
+            <field name="evaluation_type">GPA</field>
+            <field name="section">D4-S2</field>
+            <field name="parent_id" ref="op_course_9" />
+        </record>
+
+        <record id="op_course_12" model="op.course">
+            <field name="code">TINS3</field>
+            <field name="name">TIN-Semester 3</field>
+            <field name="evaluation_type">GPA</field>
+            <field name="section">D4-S3</field>
+            <field name="parent_id" ref="op_course_9" />
+        </record>
+
+        <record id="op_course_13" model="op.course">
+            <field name="code">TINS4</field>
+            <field name="name">TIN-Semester 4</field>
+            <field name="evaluation_type">GPA</field>
+            <field name="section">D4-S4</field>
+            <field name="parent_id" ref="op_course_9" />
+        </record>
+
+        <record id="op_course_14" model="op.course">
+            <field name="code">TINS5</field>
+            <field name="name">TIN-Semester 5</field>
+            <field name="evaluation_type">GPA</field>
+            <field name="section">D4-S5</field>
+            <field name="parent_id" ref="op_course_9" />
+        </record>
+		
+		<record id="op_course_15" model="op.course">
+            <field name="code">TINS6</field>
+            <field name="name">TIN-Semester 6</field>
+            <field name="evaluation_type">GPA</field>
+            <field name="section">D4-S6</field>
+            <field name="parent_id" ref="op_course_9" />
+        </record>
+		
+    </data>
+</odoo>

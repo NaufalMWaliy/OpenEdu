@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<act_window  id="action_kerjapraktek"
+		name="Kerja Praktek"
+		res_model="op.kerjapraktek"
+		view_mode="tree,form"/>
+		
+	<act_window  id="action_kerjapraktek_line"
+		name="Kerja Praktek Line" 
+		res_model="op.kerjapraktek.line"
+		view_mode="tree,form"/>
+
+	<act_window  id="action_cv"
+		name="Curriculum Vitae"
+		res_model="op.curriculum"/>
+		
+	<menuitem id="menu_kerjapraktek"
+		name="Kerja Praktek"
+		action="action_kerjapraktek" />
+		
+	<menuitem id="curriculum_vitae_sidebar" 
+		parent="menu_kerjapraktek"
+		name="Curriculum Vitae"
+		action="action_cv"/>
+
+	<menuitem id="kerjapraktek_sidebar" 
+		parent="menu_kerjapraktek" 
+		name="Kerja Praktek"
+		action="action_kerjapraktek"/>
+
+	<menuitem id="kerjapraktek_line_sidebar" 
+		parent="menu_kerjapraktek" 
+		name="Kerja Praktek Line"
+		action="action_kerjapraktek_line"/>
+</odoo>

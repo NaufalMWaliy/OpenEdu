@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <record id="op_exam_session_1" model="op.exam.session">
+            <field name="exam_code">UTS</field>
+            <field name="name">UTS-JTK</field>
+            <field name="evaluation_type">normal</field>
+            <field name="venue" ref="op_res_partner_1" />
+            <field name="exam_type" ref="op_exam_type_1" />
+            <field name="course_id" ref="op_course_2" />
+            <field name="batch_id" ref="op_batch_1" />
+            <field name="start_date"
+                eval="(DateTime.today() - relativedelta(months=2)).strftime('%Y-%m-09 %H:%M')" />
+            <field name="end_date"
+                eval="(DateTime.today() - relativedelta(months=2)).strftime('%Y-%m-13 %H:%M')" />
+        </record>
+
+        <record id="op_exam_session_2" model="op.exam.session">
+            <field name="exam_code">UAS</field>
+            <field name="name">UAS-JTK</field>
+            <field name="evaluation_type">normal</field>
+            <field name="venue" ref="op_res_partner_2" />
+            <field name="exam_type" ref="op_exam_type_1" />
+            <field name="course_id" ref="op_course_2" />
+            <field name="batch_id" ref="op_batch_2" />
+            <field name="start_date"
+                eval="(DateTime.today() - relativedelta(months=2)).strftime('%Y-06-25 %H:%M')" />
+            <field name="end_date"
+                eval="(DateTime.today() - relativedelta(months=2)).strftime('%Y-06-29 %H:%M')" />
+        </record>
+
+    </data>
+</odoo>

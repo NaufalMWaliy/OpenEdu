@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+  <!-- Form View -->
+  <record id="view_kerja_Praktek_form" model="ir.ui.view">
+    <field name="name">view.form.kerjaPraktek</field>
+    <field name="model">op.kerjapraktek</field>
+    <field name="priority" eval="8" />
+    <field name="arch" type="xml">
+      <form string="form kelas">
+        <sheet>
+          <group col="4" colspan="4">
+            <field name="name" />
+						<field name="tahun_ajar"/>
+						<field name="start_date"/>
+						<field name="end_date"/>
+						<field name="course_id"/>
+						<field name="subject_id" domain="[('course_id', '=', course_id)]" />
+          </group>
+					<group col="4" string="Students">
+						<field name="kerjapraktek_line" colspan="4" nolabel="1">
+              <tree string="kerja praktek Line" editable="top">
+                  <field name="student_id" domain="[('course_detail_ids.course_id', '=', parent.course_id),('course_detail_ids.subject_ids', '=', parent.subject_id)]"/>
+                  <field name="cv" />
+                  <field name="pengajuan_perusahaan" />
+              </tree>
+						</field>
+          </group>
+        </sheet>
+      </form>
+    </field>
+  </record>
+  <!-- Tree View -->
+  <record id="view_tree_kelas" model="ir.ui.view" >
+    <field name="name">Kelas Tree</field>
+    <field name="model">op.kerjapraktek</field>
+    <field name="arch" type="xml">
+      <tree>
+        <field name="name"/>
+        <field name="tahun_ajar" />
+      </tree>
+    </field>
+  </record>
+</odoo>
+
