@@ -69,8 +69,8 @@
 							<field name="educational_history_id"/>
 							<label for="subject_id" string="Achived Core Subject"/>
 							<field name="subject_id"/>
-							<label for="project_experience_id" string="Project Experience"/>
-							<field name="project_experience_id"/>
+							<label for="project_experience_ids" string="Project Experience"/>
+							<field name="project_experience_ids"/>
 						</page>
 						<page name="organization" string="Organization">
 						</page>
@@ -79,6 +79,16 @@
 					</notebook>
 				</sheet>
 			</form>
+		</field>
+	</record>
+
+	<record model="ir.ui.view" id="cv_tree_view">
+		<field name="name">cv.form</field>
+		<field name="model">oe.cv</field>
+		<field name="arch" type="xml">
+			<tree String="Curriculum Vitae">
+				<field name="full_name"/>
+			</tree>
 		</field>
 	</record>
 

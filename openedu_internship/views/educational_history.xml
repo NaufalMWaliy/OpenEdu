@@ -8,10 +8,21 @@
 				<sheet>
 					<group>
 						<field name="name"/>
-						<field name="year" placeholder="Example.. 'July 2016 to November 2016'"/>
+						<field name="year" placeholder="Example.. '2016 to 2016'"/>
 					</group>
 				</sheet>
 			</form>
+		</field>
+	</record>
+
+	<record model="ir.ui.view" id="educational_history_tree_view">
+		<field name="name">educational.history.tree</field>
+		<field name="model">oe.educational.history</field>
+		<field name="arch" type="xml">
+			<tree string="Educational History Tree">
+				<field name="year"/>
+				<field name="name"/>
+			</tree>
 		</field>
 	</record>
 

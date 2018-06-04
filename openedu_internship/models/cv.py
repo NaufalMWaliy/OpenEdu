@@ -5,7 +5,9 @@ from odoo import models, fields, api
 class OeCV(models.Model):
 	_name = "oe.cv"
 	_inherits = {'op.student': 'student_id'}
+	_rec_name = "full_name"
 
+	code = fields.Char()
 	student_id = fields.Many2one("op.student", "Student", required=True, ondelete="cascade")
 	full_name = fields.Char(string="Name")
 	display_full_name = fields.Char(compute="_compute_full_name", store=True, index=True)
@@ -32,7 +34,7 @@ class OeCV(models.Model):
 	skill_desired_id = fields.Many2many("oe.skill.desired")
 	educational_history_id = fields.Many2many("oe.educational.history", string="Educational History")
 	subject_id = fields.Many2many("op.subject", string="Subject")
-	project_experience_id = fields.One2many("oe.project.experience", "student_id", string="Project Experience")
+	project_experience_ids = fields.One2many("oe.project.experience", "cv_id", string="Project Experience")
 
 	@api.depends("student_id")
 	def _compute_full_name(self):

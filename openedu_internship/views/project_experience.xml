@@ -6,11 +6,12 @@
 		<field name="arch" type="xml">
 			<form string="Educational History Form">
 				<sheet>
-					<group col="2" colspan="4">
-						<field name="student_id" placeholder="Student" options="{'no_create_edit': True}" col="2" colspan="4"/>
+					<group>
+						<field name="student_id" placeholder="Student" options="{'no_create_edit': True}"/>
 					</group>
 					<group col="4">
 						<group col="2" colspan="2" name="left">
+							<field name="subject_id"/>
 							<field name="name"/>
 							<field name="description"/>
 							<field name="tech_and_tools"/>
