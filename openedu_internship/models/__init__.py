@@ -5,3 +5,5 @@ from . import religion
 from . import company_submission_model
 from . import skill_desired
 from . import jobdesk_desired
+from . import educational_history
+from . import project_experience

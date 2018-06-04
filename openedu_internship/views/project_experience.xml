@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<record model="ir.ui.view" id="project_experience_form_view">
+		<field name="name">project.experience.form</field>
+		<field name="model">oe.project.experience</field>
+		<field name="arch" type="xml">
+			<form string="Educational History Form">
+				<sheet>
+					<group col="2" colspan="4">
+						<field name="student_id" placeholder="Student" options="{'no_create_edit': True}" col="2" colspan="4"/>
+					</group>
+					<group col="4">
+						<group col="2" colspan="2" name="left">
+							<field name="name"/>
+							<field name="description"/>
+							<field name="tech_and_tools"/>
+						</group>
+						<group col="2" colspan="2" name="right">
+							<field name="position"/>
+							<field name="achievement"/>
+							<field name="learning_outcome"/>
+							<label for="start_date" string="Start and End Date"/>
+							<div name="div_project_date">
+								<div name="project_date">
+									<field name="start_date" placeholder="Start Date" style="width: 50%%"/>
+									<field name="end_date" placeholder="End Date" style="width: 50%%"/>
+								</div>
+							</div>
+						</group>
+					</group>
+				</sheet>
+			</form>
+		</field>
+	</record>
+
+	<record model="ir.actions.act_window" id="project_experience_form_action">
+		<field name="name">project.experience.action</field>
+		<field name="res_model">oe.project.experience</field>
+		<field name="view_type">form</field>
+		<field name="view_mode">tree,form</field>
+	</record>
+</odoo>

@@ -16,6 +16,8 @@
         'views/internship_view.xml',
         'views/religion_view.xml',
         'views/company_submission_view.xml',
+        'views/educational_history.xml',
+        'views/project_experience.xml',
         'menu/internship_menu.xml',
     ],
     'demo': [

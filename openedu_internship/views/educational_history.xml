@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<record model="ir.ui.view" id="educational_history_form_view">
+		<field name="name">educational.history.form</field>
+		<field name="model">oe.educational.history</field>
+		<field name="arch" type="xml">
+			<form string="Educational History Form">
+				<sheet>
+					<group>
+						<field name="name"/>
+						<field name="year" placeholder="Example.. 'July 2016 to November 2016'"/>
+					</group>
+				</sheet>
+			</form>
+		</field>
+	</record>
+
+	<record model="ir.actions.act_window" id="educational_history_form_action">
+		<field name="name">educational.history.action</field>
+		<field name="res_model">oe.educational.history</field>
+		<field name="view_type">form</field>
+		<field name="view_mode">tree,form</field>
+	</record>
+</odoo>
