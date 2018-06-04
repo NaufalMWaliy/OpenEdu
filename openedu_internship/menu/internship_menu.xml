@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<data>
+		<menuitem id="menu_internship_root" name="Internship"/>
+		<menuitem id="menu_internship_main" name="Internship" parent="menu_internship_root"/>
+		<menuitem id="menu_cv" name="Curriculum Vitae" parent="menu_internship_main" action="cv_form_action"/>
+	</data>
+</odoo>

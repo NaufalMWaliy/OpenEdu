@@ -9,7 +9,8 @@ class OeCV(models.Model):
 	student_id = fields.Many2one("op.student", "Student", required=True, ondelete="cascade")
 	full_name = fields.Char(string="Name")
 	display_full_name = fields.Char(compute="_compute_full_name", store=True, index=True)
-	short_name = fields.Char(string="Short Name")
+	nick_name = fields.Char(string="Nickname")
+	religion_id = fields.Many2one("oe.religion", "Religion", ondelete="cascade")
 
 	@api.depends("student_id")
 	def _compute_full_name(self):

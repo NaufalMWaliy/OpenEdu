@@ -1,17 +1,21 @@
 # -*- coding: utf-8 -*-
 {
     'name': "OpenEdu Internship",
-    'summary': """
-        Untuk menangani mahasiswa membuat CV, dan pemetaan kp""",
+    'summary': """Manage intership""",
     'description': """
-        Long description of module's purpose
+        Open Academy module for managing trainings:
+            - CV Submission
+            - Company Submission
+            - Result Mapping
     """,
     'author': "A4",
     'category': 'Education',
     'version': '0.1',
     'depends': ['base','openeducat_erp'],
     'data': [
-        'views/cv_view.xml'
+        'views/internship_view.xml',
+        'menu/internship_menu.xml',
+        'views/religion_view.xml',
     ],
     'demo': [
     ],
