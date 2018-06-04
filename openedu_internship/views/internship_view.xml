@@ -59,7 +59,10 @@
 							</group>
 						</page>
 						<page name="interest" string="Interest">
+							<label for="jobdesk_desired_id" string="Software Development Scope/Jobdesk Desired to be Implemented in the Internship"/>
 							<field name="jobdesk_desired_id"/>
+							<label for="skill_desired_id" string="Hardskill and Softskill Desired to be Developed in the Internship"/>
+							<field name="skill_desired_id"/>
 						</page>
 						<page name="education" string="Education">
 						</page>
