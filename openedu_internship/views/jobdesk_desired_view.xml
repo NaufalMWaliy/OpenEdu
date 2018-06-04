@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<record model="ir.ui.view" id="jobdesk_desired_form_view">
+		<field name="name">jobdesk.desired.form</field>
+		<field name="model">oe.jobdesk.desired</field>
+		<field name="arch" type="xml">
+			<form string="Jobdesk Desired Form">
+				<sheet>
+					<group>
+						<field name="name"/>
+					</group>
+				</sheet>
+			</form>
+		</field>
+	</record>
+
+	<record model="ir.actions.act_window" id="jobdesk_desired_form_action">
+		<field name="name">jobdesk.desired.action</field>
+		<field name="res_model">oe.jobdesk.desired</field>
+		<field name="view_type">form</field>
+		<field name="view_mode">tree,form</field>
+	</record>
+</odoo>
