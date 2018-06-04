@@ -59,6 +59,7 @@
 							</group>
 						</page>
 						<page name="interest" string="Interest">
+							<field name="jobdesk_desired_id"/>
 						</page>
 						<page name="education" string="Education">
 						</page>
