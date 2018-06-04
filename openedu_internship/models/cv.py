@@ -28,8 +28,6 @@ class OeCV(models.Model):
 		('submit', 'Submitted'),
 		('approve', 'Approved'),
 	], 'State', default='draft', track_visibility='onchange')
-	jobdesk_desired_id = fields.Many2many("oe.jobdesk.desired", string="Jobdesk Desired")
-	skill_desired_id = fields.Many2many("oe.skill.desired")
 
 	@api.depends("student_id")
 	def _compute_full_name(self):

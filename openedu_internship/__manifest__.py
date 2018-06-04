@@ -14,7 +14,7 @@
     'depends': ['base','openeducat_erp'],
     'data': [
         'views/internship_view.xml',
-        'menu/internship_menu.xml',
+        'menu/internship_menu.xml','views/company_submission.xml',
         'views/religion_view.xml',
     ],
     'demo': [

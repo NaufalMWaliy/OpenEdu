@@ -4,26 +4,46 @@
 <!-- Form View -->
   <record id="view_company_submission_form" model="ir.ui.view">
             <field name="name">view.form.company.submission</field>
-            <field name="model">oe.company</field>
+            <field name="model">openedu.company</field>
             <field name="priority" eval="8" />
             <field name="arch" type="xml">
                 <form string="form Company Submission">
+				<header>
+					<button string="Approve" type="object" name="submit_form"/>
+				</header>
                     <sheet>
 						<group col="4">
-						<field name="nama" colspan="4" nolabel="1"/>
+						<field name="nama" colspan="4"/>
 						</group>
 						<group col="4" colspan="4">
                             <field name="date" />
 							<field name="date" />
                         </group>
-
+						
 						<notebook colspan="4">
                         <page string="Company Identity">
 						<group col="4" colspan="4">
-							<field name="nama_perusahaan" />
+							<field name="company_name" />
 							<field name="email" />
+							<field name="address" />
 							<field name="official_website" />
-							<field name="nama_contact_person" />
+							<field name="phone_number"/>
+							<field name="standingcompany" />
+							<field name="contact_person"/>
+							<field name="numberofemployee"/>
+							<field name="name_contact_person"/>
+						</group>
+						</page>
+						<page string="Implementation technologi">
+						<group col="2" colspan="2">
+							<field name="implementation_technology" />
+						</group>
+						</page>
+						<page string="Additional Information">
+						<group col="2" colspan="2">
+							<field name="company_adventage" />
+							<field name="mechanism_internship" />
+							<field name="company_criteria" />
 						</group>
 						</page>
 						</notebook>
@@ -34,12 +54,22 @@
   <!-- Tree View -->
   <record id="pengajuan_perusahaan_tree" model="ir.ui.view" >
     <field name="name">CompanySubmission</field>
-    <field name="model">oe.company</field>
+    <field name="model">openedu.company</field>
     <field name="arch" type="xml">
       <tree>
 		<field name="nama" />
+		<field name="company_name"/>
+		<field name="address"/>
+		<field name="phone_number"/>
       </tree>
     </field>
   </record>
+  
+  	<record model="ir.actions.act_window" id="action_company_submission">
+		<field name="name">Company Submission</field>
+		<field name="res_model">openedu.company</field>
+		<field name="view_type">form</field>
+		<field name="view_mode">tree,form</field>
+	</record>
 
 </odoo>
