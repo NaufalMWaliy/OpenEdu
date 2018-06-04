@@ -5,6 +5,9 @@
 		<field name="model">oe.cv</field>
 		<field name="arch" type="xml">
 			<form string="Curriculum Vitae Form">
+				<header>
+					<field name="state" widget="statusbar" statusbar_visible="draft,submit,approve"/>
+				</header>
 				<sheet>
 					<group col="4" colspan="4">
 						<field name="student_id" placeholder="Student" options="{'no_create_edit': True}" col="2" colspan="2"/>
@@ -23,8 +26,16 @@
 								</group>
 								<group col="2" colspan="2" name="personal_detail_left">
 									<field name="gender"/>
-									<field name="religion_id"/>
-									<field name="birth_date"/>
+									<field name="religion"/>
+									<label for="birth_date" string="Birth Place, Date"/>
+									<div name="div_birthplace_date">
+										<div name="birth_format">
+											<field name="birth_country" placeholder="Country" style="width: 50%%" options='{"no_open": True}'/>
+											<field name="birth_city" placeholder="City" style="width: 50%%"/>
+										</div>
+										<field name="birth_date" placeholder="Birth Date"/>
+									</div>
+									<field name="marital_status"/>
 								</group>
 							</group>
 							<group string="Address Detail">

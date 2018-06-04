@@ -11,6 +11,23 @@ class OeCV(models.Model):
 	display_full_name = fields.Char(compute="_compute_full_name", store=True, index=True)
 	nick_name = fields.Char(string="Nickname")
 	religion_id = fields.Many2one("oe.religion", "Religion", ondelete="cascade")
+	religion = fields.Selection([
+		('islam', 'Islam'),
+		('christian','Christian'),
+		('catholic','Catholic'),
+		('hindu', 'Hindu'),
+		('buddha', 'Buddha')
+	], "Religion")
+	birth_country = fields.Many2one('res.country', string='Birth Country', ondelete='restrict')
+	birth_city = fields.Char("Birth City")
+	marital_status = fields.Selection([
+		('single', 'Single')
+	])
+	state = fields.Selection([
+		('draft', 'Draft'),
+		('submit', 'Submitted'),
+		('approve', 'Approved'),
+	], 'State', default='draft', track_visibility='onchange')
 
 	@api.depends("student_id")
 	def _compute_full_name(self):
