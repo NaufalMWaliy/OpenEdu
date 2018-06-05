@@ -73,8 +73,21 @@
 							<field name="project_experience_ids"/>
 						</page>
 						<page name="organization" string="Organization">
+							<field name="organization_history_id"/>
 						</page>
 						<page name="additional_information" string="Additional Information">
+							<group name="left">
+								<div>
+									<label for="seminar_history_id" string="Seminar/Tutorial"/>
+									<field name="seminar_history_id" nolabel="1" class="oe_vertical_separator"/>
+								</div>
+							</group>
+							<group name="right">
+								<div>
+									<label for="competition_history_id" string="Competition"/>
+									<field name="competition_history_id" nolabel="1"/>
+								</div>
+							</group>
 						</page>
 					</notebook>
 				</sheet>

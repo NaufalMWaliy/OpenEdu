@@ -18,6 +18,7 @@
         'views/company_submission_view.xml',
         'views/educational_history.xml',
         'views/project_experience.xml',
+        'views/organization_history_view.xml',
         'menu/internship_menu.xml',
     ],
     'demo': [
