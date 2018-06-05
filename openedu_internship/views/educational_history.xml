@@ -18,8 +18,9 @@
 	<record model="ir.ui.view" id="educational_history_tree_view">
 		<field name="name">educational.history.tree</field>
 		<field name="model">oe.educational.history</field>
+		<field name="priority" eval="8" />
 		<field name="arch" type="xml">
-			<tree string="Educational History Tree">
+			<tree string="Educational History">
 				<field name="year"/>
 				<field name="name"/>
 			</tree>
