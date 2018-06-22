@@ -19,6 +19,7 @@
         'views/educational_history.xml',
         'views/project_experience.xml',
         'views/organization_history_view.xml',
+        'views/result_mapping_view.xml',
         'menu/internship_menu.xml',
     ],
     'demo': [

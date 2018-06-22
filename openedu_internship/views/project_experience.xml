@@ -35,7 +35,7 @@
 	</record>
 
 	<record model="ir.actions.act_window" id="project_experience_form_action">
-		<field name="name">project.experience.action</field>
+		<field name="name">Project Experience</field>
 		<field name="res_model">oe.project.experience</field>
 		<field name="view_type">form</field>
 		<field name="view_mode">tree,form</field>

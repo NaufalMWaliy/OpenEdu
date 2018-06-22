@@ -2,9 +2,9 @@ from odoo import models,fields,api
 
 class CompanySubmission(models.Model):
 	_name = 'openedu.company'
-	_description = 'model form company submission'
-	
-	nama = fields.Many2one('op.student','Students',required=True)
+	_rec_name = "company_name"
+
+	proposer_ids = fields.Many2many("op.student", string="Proposer")
 	date = fields.Date('Date', required=True)
 	company_name = fields.Char('Company Name',required=True)
 	address = fields.Char('Address',required=True)

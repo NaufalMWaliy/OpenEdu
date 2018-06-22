@@ -10,3 +10,4 @@ from . import project_experience
 from . import organization_history
 from . import seminar_history
 from . import competition_history
+from . import result_mapping

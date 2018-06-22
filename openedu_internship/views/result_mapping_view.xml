@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<record model="ir.ui.view" id="result_mapping_form_view">
+		<field name="name">result.mapping.form</field>
+		<field name="model">oe.result.mapping</field>
+		<field name="arch" type="xml">
+			<form string="Result Mapping Form">
+				<sheet>
+					<group>
+						<field name="student_id"/>
+						<field name="nim"/>
+						<field name="company_id"/>
+					</group>
+				</sheet>
+			</form>
+		</field>
+	</record>
+
+	<record model="ir.ui.view" id="result_mapping_tree_view">
+		<field name="name">result.mapping.tree</field>
+		<field name="model">oe.result.mapping</field>
+		<field name="arch" type="xml">
+			<tree string="Result Mapping Tree">
+				<field name="nim"/>
+				<field name="company_id"/>
+			</tree>
+		</field>
+	</record>
+
+	<record model="ir.actions.act_window" id="result_mapping_form_action">
+		<field name="name">Result Mapping</field>
+		<field name="res_model">oe.result.mapping</field>
+		<field name="view_type">form</field>
+		<field name="view_mode">tree,form</field>
+	</record>
+</odoo>
