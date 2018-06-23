@@ -51,15 +51,15 @@
 	</record>
 	<!-- Tree View -->
 	<record id="pengajuan_perusahaan_tree" model="ir.ui.view" >
-	<field name="name">Company Submission</field>
-	<field name="model">openedu.company</field>
-	<field name="arch" type="xml">
-		<tree>
-			<field name="company_name"/>
-			<field name="address"/>
-			<field name="phone_number"/>
-		</tree>
-	</field>
+		<field name="name">Company Submission</field>
+		<field name="model">openedu.company</field>
+		<field name="arch" type="xml">
+			<tree>
+				<field name="company_name"/>
+				<field name="address"/>
+				<field name="phone_number"/>
+			</tree>
+		</field>
 	</record>
 
   	<record model="ir.actions.act_window" id="action_company_submission">

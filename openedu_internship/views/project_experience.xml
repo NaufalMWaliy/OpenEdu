@@ -6,11 +6,9 @@
 		<field name="arch" type="xml">
 			<form string="Educational History Form">
 				<sheet>
-					<group>
-						<field name="student_id" placeholder="Student" options="{'no_create_edit': True}"/>
-					</group>
 					<group col="4">
 						<group col="2" colspan="2" name="left">
+							<!--field name="cv_id"/-->
 							<field name="subject_id"/>
 							<field name="name"/>
 							<field name="description"/>
@@ -34,10 +32,21 @@
 		</field>
 	</record>
 
-	<record model="ir.actions.act_window" id="project_experience_form_action">
+	<record model="ir.ui.view" id="project_experience_tree_view">
+		<field name="name">project.experience.tree</field>
+		<field name="model">oe.project.experience</field>
+		<field name="arch" type="xml">
+			<tree string="Project Experience Tree">
+				<field name="subject_name"/>
+				<field name="name"/>
+			</tree>
+		</field>
+	</record>
+
+	<!--record model="ir.actions.act_window" id="project_experience_form_action">
 		<field name="name">Project Experience</field>
 		<field name="res_model">oe.project.experience</field>
 		<field name="view_type">form</field>
 		<field name="view_mode">tree,form</field>
-	</record>
+	</record-->
 </odoo>

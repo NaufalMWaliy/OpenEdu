@@ -34,7 +34,7 @@ class OeCV(models.Model):
 	skill_desired_id = fields.Many2many("oe.skill.desired")
 	educational_history_id = fields.Many2many("oe.educational.history", string="Educational History")
 	subject_id = fields.Many2many("op.subject", string="Subject")
-	project_experience_ids = fields.One2many("oe.project.experience", "cv_id", string="Project Experience")
+	project_experience_ids = fields.One2many("oe.project.experience", "cv_id",string="Project Experience")
 	organization_history_id = fields.Many2many("oe.organization.history", string="Organization History")
 	seminar_history_id = fields.Many2many("oe.seminar.history", string="Seminar")
 	competition_history_id = fields.Many2many("oe.competition.history", string="Competition")
