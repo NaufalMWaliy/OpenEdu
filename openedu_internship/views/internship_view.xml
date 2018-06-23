@@ -80,17 +80,27 @@
 								<div>
 									<label for="adt_info_programming" string="Programming"/>
 									<field name="adt_info_programming_id"/>
+
+									<label for="adt_info_software_enginering_id" string="Software Enginering"/>
+									<field name="adt_info_software_enginering_id"/>
+
+									<label for="adt_info_infrastructure_id" string="Infrastructure"/>
+									<field name="adt_info_infrastructure_id"/>
+
+									<label for="adt_info_etc_id" string="Etc"/>
+									<field name="adt_info_etc_id"/>
+
+									<label for="adt_info_communtication_id" string="Communication"/>
+									<field name="adt_info_communtication_id"/>
 								</div>
 							</group>
 							<group string="Seminar/Tutorial">
 								<div>
-									<label for="seminar_history_id" string="Seminar/Tutorial"/>
 									<field name="seminar_history_id" nolabel="1" class="oe_vertical_separator"/>
 								</div>
 							</group>
 							<group string="Competition History">
 								<div>
-									<label for="competition_history_id" string="Competition"/>
 									<field name="competition_history_id" nolabel="1"/>
 								</div>
 							</group>

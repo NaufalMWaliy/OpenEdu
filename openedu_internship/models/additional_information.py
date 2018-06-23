@@ -31,6 +31,7 @@ class OeSoftwareEnginering(models.Model):
 	], 'Software Enginering')
 	name = fields.Char(string="Name")
 	skill = fields.Selection(SKILL_VALUE, 'Skill')
+	cv_id = fields.Many2one("oe.cv", ondelete="set null")
 
 class OeInfrastructure(models.Model):
 	_name = "oe.additional.information.infrastructure"
@@ -41,6 +42,7 @@ class OeInfrastructure(models.Model):
 	], 'Infrastructure')
 	name = fields.Char(string="Name")
 	skill = fields.Selection(SKILL_VALUE, 'Skill')
+	cv_id = fields.Many2one("oe.cv", ondelete="set null")
 
 class OeEtc(models.Model):
 	_name = "oe.additional.information.etc"
@@ -49,9 +51,10 @@ class OeEtc(models.Model):
 		('office_tools', 'Office Tools'),
 		('ide', 'IDE'),
 		('graphics_design', 'Graphics Design'),
-	], 'Etc')
+	], 'Type')
 	name = fields.Char(string="Name")
 	skill = fields.Selection(SKILL_VALUE, 'Skill')
+	cv_id = fields.Many2one("oe.cv", ondelete="set null")
 
 class OeCommunication(models.Model):
 	_name = "oe.additional.information.communication"
@@ -61,6 +64,7 @@ class OeCommunication(models.Model):
 	speaking_skill = fields.Selection(SKILL_VALUE, 'Speaking Skill')
 	listening_skill = fields.Selection(SKILL_VALUE, 'Listening Skill')
 	writing_skill = fields.Selection(SKILL_VALUE, 'Writing Skill')
+	cv_id = fields.Many2one("oe.cv", ondelete="set null")
 
 class OpLanguage(models.Model):
 	_name = "oe.language"

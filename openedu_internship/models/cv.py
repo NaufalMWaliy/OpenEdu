@@ -39,6 +39,10 @@ class OeCV(models.Model):
 	seminar_history_id = fields.Many2many("oe.seminar.history", string="Seminar")
 	competition_history_id = fields.Many2many("oe.competition.history", string="Competition")
 	adt_info_programming_id = fields.One2many("oe.additional.information.progamming", "cv_id", string="Programming")
+	adt_info_software_enginering_id = fields.One2many("oe.additional.information.software.enginering", "cv_id", string="Software Enginering")
+	adt_info_infrastructure_id = fields.One2many("oe.additional.information.infrastructure", "cv_id", string="Infrastructure")
+	adt_info_etc_id = fields.One2many("oe.additional.information.etc", "cv_id", string="Etc")
+	adt_info_communtication_id = fields.One2many("oe.additional.information.communication", "cv_id", string="Communication")
 
 	@api.depends("student_id")
 	def _compute_full_name(self):

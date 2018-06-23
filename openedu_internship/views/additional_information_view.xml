@@ -15,13 +15,66 @@
 			</form>
 		</field>
 	</record>
-
 	<record model="ir.ui.view" id="additional_information_progamming_tree_view">
 		<field name="name">additional.information.progamming.tree</field>
 		<field name="model">oe.additional.information.progamming</field>
 		<field name="arch" type="xml">
 			<tree>
 				<field name="progamming"/>
+				<field name="name"/>
+				<field name="skill"/>
+			</tree>
+		</field>
+	</record>
+
+	<record model="ir.ui.view" id="additional_information_software_enginering_form_view">
+		<field name="name">additional.information.software.enginering.form</field>
+		<field name="model">oe.additional.information.software.enginering</field>
+		<field name="arch" type="xml">
+			<form string="Additional Information Software Enginering">
+				<sheet>
+					<group>
+						<field name="software_enginering"/>
+						<field name="name"/>
+						<field name="skill"/>
+					</group>
+				</sheet>
+			</form>
+		</field>
+	</record>
+	<record model="ir.ui.view" id="additional_information_software_enginering_tree_view">
+		<field name="name">additional.information.software.enginering.tree</field>
+		<field name="model">oe.additional.information.software.enginering</field>
+		<field name="arch" type="xml">
+			<tree>
+				<field name="software_enginering"/>
+				<field name="name"/>
+				<field name="skill"/>
+			</tree>
+		</field>
+	</record>
+
+	<record model="ir.ui.view" id="additional_information_software_enginering_form_view">
+		<field name="name">additional.information.software.enginering.form</field>
+		<field name="model">oe.additional.information.software.enginering</field>
+		<field name="arch" type="xml">
+			<form string="Additional Information Software Enginering">
+				<sheet>
+					<group>
+						<field name="software_enginering"/>
+						<field name="name"/>
+						<field name="skill"/>
+					</group>
+				</sheet>
+			</form>
+		</field>
+	</record>
+	<record model="ir.ui.view" id="additional_information_software_enginering_tree_view">
+		<field name="name">additional.information.software.enginering.tree</field>
+		<field name="model">oe.additional.information.software.enginering</field>
+		<field name="arch" type="xml">
+			<tree>
+				<field name="software_enginering"/>
 				<field name="name"/>
 				<field name="skill"/>
 			</tree>
