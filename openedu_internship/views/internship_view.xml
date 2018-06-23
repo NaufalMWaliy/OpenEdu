@@ -76,13 +76,19 @@
 							<field name="organization_history_id"/>
 						</page>
 						<page name="additional_information" string="Additional Information">
-							<group name="left">
+							<group string="Additional Information">
+								<div>
+									<label for="adt_info_programming" string="Programming"/>
+									<field name="adt_info_programming_id"/>
+								</div>
+							</group>
+							<group string="Seminar/Tutorial">
 								<div>
 									<label for="seminar_history_id" string="Seminar/Tutorial"/>
 									<field name="seminar_history_id" nolabel="1" class="oe_vertical_separator"/>
 								</div>
 							</group>
-							<group name="right">
+							<group string="Competition History">
 								<div>
 									<label for="competition_history_id" string="Competition"/>
 									<field name="competition_history_id" nolabel="1"/>

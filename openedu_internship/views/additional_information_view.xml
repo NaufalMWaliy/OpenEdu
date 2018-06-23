@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<record model="ir.ui.view" id="additional_information_progamming_form_view">
+		<field name="name">additional.information.progamming.form</field>
+		<field name="model">oe.additional.information.progamming</field>
+		<field name="arch" type="xml">
+			<form string="Additional Information Programming">
+				<sheet>
+					<group>
+						<field name="progamming"/>
+						<field name="name"/>
+						<field name="skill"/>
+					</group>
+				</sheet>
+			</form>
+		</field>
+	</record>
+
+	<record model="ir.ui.view" id="additional_information_progamming_tree_view">
+		<field name="name">additional.information.progamming.tree</field>
+		<field name="model">oe.additional.information.progamming</field>
+		<field name="arch" type="xml">
+			<tree>
+				<field name="progamming"/>
+				<field name="name"/>
+				<field name="skill"/>
+			</tree>
+		</field>
+	</record>
+</odoo>

@@ -2,24 +2,25 @@
 
 from odoo import models, fields, api
 
-SKILL_VALUE = fields.Selection([
+SKILL_VALUE = [
 	('deficient', 'Deficient'),
 	('fair', 'Fair'),
 	('good', 'Good'),
 	('very_good','Very Good'),
-])
+]
 
-class OeProgramming(models.Model):
+class OeProgamming(models.Model):
 	_name = "oe.additional.information.progamming"
 
 	progamming = fields.Selection([
 		('desktop_lang', 'Desktop Language'),
-		('web_lang', 'Web Programming Language'),
+		('web_lang', 'Web Progamming Language'),
 		('framework', 'Framework'),
 		('database_lang', 'Database'),
 	], 'Type')
 	name = fields.Char(string='Name')
 	skill = fields.Selection(SKILL_VALUE, 'Skill')
+	cv_id = fields.Many2one("oe.cv", ondelete="set null")
 
 class OeSoftwareEnginering(models.Model):
 	_name = "oe.additional.information.software.enginering"
@@ -31,7 +32,7 @@ class OeSoftwareEnginering(models.Model):
 	name = fields.Char(string="Name")
 	skill = fields.Selection(SKILL_VALUE, 'Skill')
 
-class OeInfrastructur(models.Model):
+class OeInfrastructure(models.Model):
 	_name = "oe.additional.information.infrastructure"
 
 	infrastructure = fields.Selection([
@@ -60,3 +61,8 @@ class OeCommunication(models.Model):
 	speaking_skill = fields.Selection(SKILL_VALUE, 'Speaking Skill')
 	listening_skill = fields.Selection(SKILL_VALUE, 'Listening Skill')
 	writing_skill = fields.Selection(SKILL_VALUE, 'Writing Skill')
+
+class OpLanguage(models.Model):
+	_name = "oe.language"
+
+	name = fields.Char(string="Name")
