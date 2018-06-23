@@ -12,6 +12,7 @@
 				</header>
 				<sheet>
 					<group col="4" colspan="4">
+						<field name="day_name"/>
 						<field name="date" />
 					</group>
 					<notebook colspan="4">

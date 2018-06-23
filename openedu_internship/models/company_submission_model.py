@@ -1,4 +1,5 @@
 from odoo import models,fields,api
+from datetime import datetime
 
 class CompanySubmission(models.Model):
 	_name = 'openedu.company'
@@ -6,6 +7,7 @@ class CompanySubmission(models.Model):
 
 	proposer_ids = fields.Many2many("op.student", string="Proposer")
 	date = fields.Date('Date', required=True)
+	day_name = fields.Char(compute="_get_day_name", string="Day", store=True, index=True)
 	company_name = fields.Char('Company Name',required=True)
 	address = fields.Char('Address',required=True)
 	name_contact_person = fields.Char('Name Contact Person',required=True)
@@ -19,3 +21,11 @@ class CompanySubmission(models.Model):
 	mechanism_internship=fields.Text('Mechanism Internship')
 	company_criteria=fields.Text('Company Criteria')
 	implementation_technology=fields.Text('Implementation Technology',required=True)
+
+	@api.depends("date")
+	def _get_day_name(self):
+		for data in self:
+			if data.date:
+				now = data.date
+				day = datetime.strptime(now, "%Y-%m-%d")
+				data.day_name = day.strftime("%A")
