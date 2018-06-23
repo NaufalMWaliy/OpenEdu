@@ -54,14 +54,14 @@
 		</field>
 	</record>
 
-	<record model="ir.ui.view" id="additional_information_software_enginering_form_view">
-		<field name="name">additional.information.software.enginering.form</field>
-		<field name="model">oe.additional.information.software.enginering</field>
+	<record model="ir.ui.view" id="additional_information_infrastructure_form_view">
+		<field name="name">additional.information.infrastructure.form</field>
+		<field name="model">oe.additional.information.infrastructure</field>
 		<field name="arch" type="xml">
-			<form string="Additional Information Software Enginering">
+			<form string="Additional Information Infrastructure">
 				<sheet>
 					<group>
-						<field name="software_enginering"/>
+						<field name="infrastructure"/>
 						<field name="name"/>
 						<field name="skill"/>
 					</group>
@@ -69,14 +69,76 @@
 			</form>
 		</field>
 	</record>
-	<record model="ir.ui.view" id="additional_information_software_enginering_tree_view">
-		<field name="name">additional.information.software.enginering.tree</field>
-		<field name="model">oe.additional.information.software.enginering</field>
+	<record model="ir.ui.view" id="additional_information_infrastructure_tree_view">
+		<field name="name">additional.information.infrastructure.tree</field>
+		<field name="model">oe.additional.information.infrastructure</field>
 		<field name="arch" type="xml">
 			<tree>
-				<field name="software_enginering"/>
+				<field name="infrastructure"/>
 				<field name="name"/>
 				<field name="skill"/>
+			</tree>
+		</field>
+	</record>
+
+	<record model="ir.ui.view" id="additional_information_etc_form_view">
+		<field name="name">additional.information.etc.form</field>
+		<field name="model">oe.additional.information.etc</field>
+		<field name="arch" type="xml">
+			<form string="Additional Information Etc">
+				<sheet>
+					<group>
+						<field name="etc"/>
+						<field name="name"/>
+						<field name="skill"/>
+					</group>
+				</sheet>
+			</form>
+		</field>
+	</record>
+	<record model="ir.ui.view" id="additional_information_etc_tree_view">
+		<field name="name">additional.information.etc.tree</field>
+		<field name="model">oe.additional.information.etc</field>
+		<field name="arch" type="xml">
+			<tree>
+				<field name="etc"/>
+				<field name="name"/>
+				<field name="skill"/>
+			</tree>
+		</field>
+	</record>
+
+	<record model="ir.ui.view" id="additional_information_communication_form_view">
+		<field name="name">additional.information.communication.form</field>
+		<field name="model">oe.additional.information.communication</field>
+		<field name="arch" type="xml">
+			<form string="Additional Information Communication">
+				<sheet>
+					<group>
+						<group>
+							<field name="name"/>
+							<field name="reading_skill"/>
+							<field name="speaking_skill"/>
+						</group>
+						<group>
+							<field name="listening_skill"/>
+							<field name="writing_skill"/>
+						</group>
+					</group>
+				</sheet>
+			</form>
+		</field>
+	</record>
+	<record model="ir.ui.view" id="additional_information_communcation_tree_view">
+		<field name="name">additional.information.communication.tree</field>
+		<field name="model">oe.additional.information.communication</field>
+		<field name="arch" type="xml">
+			<tree>
+				<field name="name"/>
+				<field name="reading_skill"/>
+				<field name="speaking_skill"/>
+				<field name="listening_skill"/>
+				<field name="writing_skill"/>
 			</tree>
 		</field>
 	</record>
