@@ -7,3 +7,7 @@ class OeEducationalHistory(models.Model):
 
 	name = fields.Char(string="School")
 	year = fields.Char(string="Year")
+
+	_sql_constraints = [
+		('unique_school_name',
+			'unique(name)', 'School Name should be unique!, Please search first before creating new!')]

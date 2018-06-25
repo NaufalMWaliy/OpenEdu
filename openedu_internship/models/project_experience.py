@@ -16,3 +16,7 @@ class OeProjectExperience(models.Model):
 	achievement = fields.Text(string="Achievement")
 	learning_outcome = fields.Text(string="Learning Outcomes")
 	cv_id = fields.Many2one("oe.cv", string="Curriculum Vitae", ondelete="set null")
+
+	_sql_constraints = [
+		('unique_task_name',
+			'unique(name)', 'Task Name should be unique!, Please search first before creating new!')]

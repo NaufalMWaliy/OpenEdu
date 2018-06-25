@@ -12,8 +12,8 @@
 				</header>
 				<sheet>
 					<group col="4" colspan="4">
+						<field name="date"/>
 						<field name="day_name"/>
-						<field name="date" />
 					</group>
 					<notebook colspan="4">
 						<page string="Proposer">

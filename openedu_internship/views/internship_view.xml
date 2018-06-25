@@ -66,43 +66,33 @@
 						</page>
 						<page name="education" string="Education">
 							<label for="educational_history_id" string="Educational History"/>
-							<field name="educational_history_id"/>
+							<field name="educational_history_id" nolabel="1"/>
 							<label for="subject_id" string="Achived Core Subject"/>
-							<field name="subject_id"/>
+							<field name="subject_id" nolabel="1"/>
 							<label for="project_experience_ids" string="Project Experience"/>
-							<field name="project_experience_ids"/>
+							<field name="project_experience_ids" nolabel="1"/>
 						</page>
 						<page name="organization" string="Organization">
-							<field name="organization_history_id"/>
+							<field name="organization_history_id" nolabel="1"/>
 						</page>
 						<page name="additional_information" string="Additional Information">
-							<group string="Additional Information">
-								<div>
-									<label for="adt_info_programming" string="Programming"/>
-									<field name="adt_info_programming_id"/>
-
-									<label for="adt_info_software_enginering_id" string="Software Enginering"/>
-									<field name="adt_info_software_enginering_id"/>
-
-									<label for="adt_info_infrastructure_id" string="Infrastructure"/>
-									<field name="adt_info_infrastructure_id"/>
-
-									<label for="adt_info_etc_id" string="Etc"/>
-									<field name="adt_info_etc_id"/>
-
-									<label for="adt_info_communtication_id" string="Communication"/>
-									<field name="adt_info_communtication_id"/>
-								</div>
+							<group string="Additional Information" col="4" colspan="4">
+								<label for="adt_info_programming_id" string="Educational History"/>
+								<field name="adt_info_programming_id" nolabel="1" colspan="4"/>
+								<label for="adt_info_software_enginering_id" string="Educational History"/>
+								<field name="adt_info_software_enginering_id" nolabel="1" colspan="4"/>
+								<label for="adt_info_infrastructure_id" string="Educational History"/>
+								<field name="adt_info_infrastructure_id" nolabel="1" colspan="4"/>
+								<label for="adt_info_etc_id" string="Educational History"/>
+								<field name="adt_info_etc_id" nolabel="1" colspan="4"/>
+								<label for="adt_info_communtication_id" string="Educational History"/>
+								<field name="adt_info_communtication_id" nolabel="1" colspan="4"/>
 							</group>
 							<group string="Seminar/Tutorial">
-								<div>
-									<field name="seminar_history_id" nolabel="1" class="oe_vertical_separator"/>
-								</div>
+								<field name="seminar_history_id" nolabel="1" class="oe_vertical_separator"/>
 							</group>
 							<group string="Competition History">
-								<div>
-									<field name="competition_history_id" nolabel="1"/>
-								</div>
+								<field name="competition_history_id" nolabel="1"/>
 							</group>
 						</page>
 					</notebook>
