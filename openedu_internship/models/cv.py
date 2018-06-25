@@ -29,7 +29,7 @@ class OeCV(models.Model):
 		('draft', 'Draft'),
 		('submit', 'Submitted'),
 		('approve', 'Approved'),
-	], 'State', default='draft', track_visibility='onchange')
+	], 'State', readonly=True, default='draft', track_visibility='onchange')
 	jobdesk_desired_id = fields.Many2many("oe.jobdesk.desired", string="Jobdesk Desired")
 	skill_desired_id = fields.Many2many("oe.skill.desired")
 	educational_history_id = fields.Many2many("oe.educational.history", string="Educational History")
@@ -59,3 +59,15 @@ class OeCV(models.Model):
 	@api.onchange("display_full_name")
 	def set_full_name(self):
 		self.full_name = self.display_full_name
+
+	@api.multi
+	def act_submit(self):
+		self.state = 'submit'
+
+	@api.multi
+	def act_draft(self):
+		self.state = 'draft'
+
+	@api.multi
+	def act_approve(self):
+		self.state = 'approve'
