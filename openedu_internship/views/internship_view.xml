@@ -81,15 +81,15 @@
 						</page>
 						<page name="additional_information" string="Additional Information">
 							<group string="Additional Information" col="4" colspan="4">
-								<label for="adt_info_programming_id" string="Educational History"/>
+								<label for="adt_info_programming_id" string="Programming"/>
 								<field name="adt_info_programming_id" nolabel="1" colspan="4"/>
-								<label for="adt_info_software_enginering_id" string="Educational History"/>
+								<label for="adt_info_software_enginering_id" string="Software Enginering"/>
 								<field name="adt_info_software_enginering_id" nolabel="1" colspan="4"/>
-								<label for="adt_info_infrastructure_id" string="Educational History"/>
+								<label for="adt_info_infrastructure_id" string="Infrastructure"/>
 								<field name="adt_info_infrastructure_id" nolabel="1" colspan="4"/>
-								<label for="adt_info_etc_id" string="Educational History"/>
+								<label for="adt_info_etc_id" string="Etc"/>
 								<field name="adt_info_etc_id" nolabel="1" colspan="4"/>
-								<label for="adt_info_communtication_id" string="Educational History"/>
+								<label for="adt_info_communtication_id" string="Communication"/>
 								<field name="adt_info_communtication_id" nolabel="1" colspan="4"/>
 							</group>
 							<group string="Seminar/Tutorial">

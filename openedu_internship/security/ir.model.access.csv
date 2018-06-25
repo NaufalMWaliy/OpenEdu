@@ -1,1 +1,5 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_oe_cv_student,oe_cv_student,model_oe_cv,openeducat_core.group_op_student,1,1,1,0
+access_oe_cv_faculty,oe_cv_faculty,model_oe_cv,openeducat_core.group_op_faculty,1,1,0,0
+access_oe_cv_back_office,oe_cv_back_office,model_oe_cv,openeducat_core.group_op_back_office,1,1,1,1
+

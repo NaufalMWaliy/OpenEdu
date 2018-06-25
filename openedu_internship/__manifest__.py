@@ -11,8 +11,9 @@
     'author': "A4",
     'category': 'Education',
     'version': '0.1',
-    'depends': ['base','openeducat_erp'],
+    'depends': ['base','openeducat_erp','openedu'],
     'data': [
+        'security/ir.model.access.csv',
         'views/internship_view.xml',
         'views/religion_view.xml',
         'views/company_submission_view.xml',

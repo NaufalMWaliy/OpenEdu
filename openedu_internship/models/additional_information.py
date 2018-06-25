@@ -9,12 +9,12 @@ SKILL_VALUE = [
 	('very_good','Very Good'),
 ]
 
-class OeProgamming(models.Model):
-	_name = "oe.additional.information.progamming"
+class OeProgramming(models.Model):
+	_name = "oe.additional.information.programming"
 
-	progamming = fields.Selection([
+	programming = fields.Selection([
 		('desktop_lang', 'Desktop Language'),
-		('web_lang', 'Web Progamming Language'),
+		('web_lang', 'Web Programming Language'),
 		('framework', 'Framework'),
 		('database_lang', 'Database'),
 	], 'Type')
