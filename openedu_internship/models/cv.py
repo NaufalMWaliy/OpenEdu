@@ -64,11 +64,14 @@ class OeCV(models.Model):
 	@api.multi
 	def act_submit(self):
 		self.state = 'submit'
+		return True
 
 	@api.multi
 	def act_draft(self):
 		self.state = 'draft'
+		return True
 
 	@api.multi
 	def act_approve(self):
 		self.state = 'approve'
+		return True
