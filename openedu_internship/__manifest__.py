@@ -13,7 +13,7 @@
     'version': '0.1',
     'depends': ['base','openeducat_erp','openedu'],
     'data': [
-        'security/oe_security.xml',
+        # 'security/oe_security.xml',
         'security/ir.model.access.csv',
         'views/internship_view.xml',
         'views/religion_view.xml',

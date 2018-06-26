@@ -1,13 +1,13 @@
 # -*- coding: utf-8 -*-
 
-from odoo.exceptions import ValidationError
-from odoo import models, fields, api, _
+from odoo import models, fields, api
 
 class OeCV(models.Model):
 	_name = "oe.cv"
+	_inherits = {'op.student': 'student_id'}
+	_rec_name = "full_name"
 
-	name = fields.Char('Name', readonly=True, default='New')
-	student_id = fields.Many2one("op.student", string="Student", track_visibility='onchange')
+	student_id = fields.Many2one("op.student", "Student", required=True, ondelete="cascade")
 	full_name = fields.Char(string="Name")
 	display_full_name = fields.Char(compute="_compute_full_name", store=True, index=True)
 	nick_name = fields.Char(string="Nickname")
@@ -42,36 +42,18 @@ class OeCV(models.Model):
 	adt_info_etc_id = fields.One2many("oe.additional.information.etc", "cv_id", string="Etc")
 	adt_info_communtication_id = fields.One2many("oe.additional.information.communication", "cv_id", string="Communication")
 	is_approved = fields.Boolean(default=False)
-	phone = fields.Char(related="student_id.phone", store=True, string="Phone")
-	email = fields.Char(related="student_id.email", store=True, string="Email")
-	nationality = fields.Many2one(related="student_id.nationality", store=True, string="Nationality")
-	gender = fields.Selection(related="student_id.gender", store=True)
-	birth_date = fields.Date(related="student_id.birth_date", store=True, string="Birth Date")
-	street = fields.Char(related="student_id.street", store=True)
-	city = fields.Char(related="student_id.city", store=True)
-	state_id = fields.Many2one(related="student_id.state_id", store=True)
-	zip = fields.Char(related="student_id.zip", store=True)
-	country_id = fields.Many2one(related="student_id.country_id", store=True)
-	image = fields.Binary(related="student_id.image", store=True)
-
-	@api.model
-	def create(self, vals):
-		if vals.get('name', 'New') == 'New':
-			vals['name'] = self.env['ir.sequence'].next_by_code(
-				'oe.cv') or '/'
-		return super(OeCV, self).create(vals)
 
 	@api.depends("student_id")
 	def _compute_full_name(self):
 		str_name = ""
-		for rec in self.student_id:
-			if rec.name:
-				str_name += rec.name
-			if rec.middle_name:
-				str_name += " " + rec.middle_name
-			if rec.last_name:
-				str_name += " " + rec.last_name
-			self.display_full_name = str_name
+		for student in self:
+			if student.name:
+				str_name = str_name + student.name
+			if student.middle_name:
+				str_name = str_name + " " + student.middle_name
+			if student.last_name:
+				str_name = str_name + " " + student.last_name
+			student.display_full_name = str_name
 
 	@api.onchange("display_full_name")
 	def set_full_name(self):
