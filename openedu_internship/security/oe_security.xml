@@ -11,5 +11,13 @@
             <field name="users" eval="[(4, ref('base.user_root'))]"/>
             <field name="implied_ids" eval="[(4, ref('base.group_user'))]"/>
         </record>
+
+        <record model="ir.rule" id="student_cv_rule">
+            <field name="name">Student CV Rule</field>
+            <field name="model_id" ref="model_oe_cv" />
+            <field name="groups"
+                eval="[(4, ref('openedu_internship.group_oe_student'))]" />
+            <field name="domain_force">['|', ('student_id.user_id','=',user.id), ('student_id.user_id','in', user.child_ids.ids)]</field>
+        </record>
 	</data>
 </odoo>
