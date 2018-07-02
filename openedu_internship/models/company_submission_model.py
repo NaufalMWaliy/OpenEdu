@@ -21,6 +21,11 @@ class CompanySubmission(models.Model):
 	mechanism_internship=fields.Text('Mechanism Internship')
 	company_criteria=fields.Text('Company Criteria')
 	implementation_technology=fields.Text('Implementation Technology',required=True)
+	isApproved = fields.Boolean(default=False)
+	state = fields.Selection([
+		('draft', 'Draft'),
+		('approve', 'Approved'),
+	], 'state', readonly=True, default='draft', track_visibility='onchange')
 
 	@api.depends("date")
 	def _get_day_name(self):
@@ -29,3 +34,8 @@ class CompanySubmission(models.Model):
 				now = data.date
 				day = datetime.strptime(now, "%Y-%m-%d")
 				data.day_name = day.strftime("%A")
+
+	def act_approve(self):
+		self.isApproved = True
+		self.state = 'approve'
+		return True

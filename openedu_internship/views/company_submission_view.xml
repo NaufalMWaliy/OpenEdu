@@ -6,9 +6,10 @@
 		<field name="model">openedu.company</field>
 		<field name="priority" eval="8"/>
 		<field name="arch" type="xml">
-			<form string="form Company Submission">
+			<form string="Form Company Submission">
 				<header>
-					<button string="Approve" type="object" name="submit_form"/>
+					<button string="Approve" type="object" name="act_approve" states="draft"/>
+					<field name="state" widget="statusbar" statusbar_visible="draft,approve"/>
 				</header>
 				<sheet>
 					<group col="4" colspan="4">
