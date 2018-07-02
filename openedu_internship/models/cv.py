@@ -5,8 +5,8 @@ from odoo import models, fields, api, _
 
 class OeCV(models.Model):
 	_name = "oe.cv"
+	_rec_name = "full_name"
 
-	name = fields.Char('Name', readonly=True, default='New')
 	student_id = fields.Many2one("op.student", string="Student", track_visibility='onchange')
 	full_name = fields.Char(string="Name")
 	display_full_name = fields.Char(compute="_compute_full_name", store=True, index=True)
