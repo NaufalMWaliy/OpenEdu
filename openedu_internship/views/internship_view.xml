@@ -7,9 +7,9 @@
 			<form string="Curriculum Vitae Form">
 				<header>
 					<button string="Submit" type="object" name="act_submit" states="draft" class="oe_highlight"/>
-					<button string="Draft" type="object" name="act_draft" states="submit"/>
-					<button string="Approve" type="object" name="act_approve" states="submit" class="oe_highlight"/>
-					<button string="Cancel" type="object" name="act_draft" states="approve"/>
+					<button string="Draft" type="object" name="act_draft" states="submit" groups="openeducat_core.group_op_faculty"/>
+					<button string="Approve" type="object" name="act_approve" states="submit" class="oe_highlight" groups="openeducat_core.group_op_faculty"/>
+					<button string="Cancel" type="object" name="act_draft" states="approve" groups="openeducat_core.group_op_faculty"/>
 					<field name="state" widget="statusbar" statusbar_visible="draft,submit,approve"/>
 				</header>
 				<sheet>
