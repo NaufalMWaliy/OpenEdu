@@ -40,7 +40,7 @@
             <field name="domain_force">[('student_id.user_id','!=',user.id)]</field>
         </record>
 
-        <record model="ir.rule" id="faculty_edit_cv_rule">
+        <record model="ir.rule" id="faculty_edit_view_cv_rule">
             <field name="name">Faculty Can Edit Student CV</field>
             <field name="model_id" ref="model_oe_cv" />
             <field name="groups"
@@ -49,6 +49,7 @@
             <field name="perm_write" eval="1"/>
             <field name="perm_create" eval="0"/>
             <field name="perm_unlink" eval="0"/>
+            <field name="domain_force">[('isSubmitted','=',True)]</field>
         </record>
 	</data>
 </odoo>

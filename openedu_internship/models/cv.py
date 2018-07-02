@@ -53,13 +53,8 @@ class OeCV(models.Model):
 	zip = fields.Char(related="student_id.zip", store=True)
 	country_id = fields.Many2one(related="student_id.country_id", store=True)
 	image = fields.Binary(related="student_id.image", store=True)
-
-	@api.model
-	def create(self, vals):
-		if vals.get('name', 'New') == 'New':
-			vals['name'] = self.env['ir.sequence'].next_by_code(
-				'oe.cv') or '/'
-		return super(OeCV, self).create(vals)
+	isSubmitted = fields.Boolean(default=False, string="Submitted?")
+	isApproved = fields.Boolean(default=False, string="Approved?")
 
 	@api.depends("student_id")
 	def _compute_full_name(self):
@@ -80,14 +75,18 @@ class OeCV(models.Model):
 	@api.multi
 	def act_submit(self):
 		self.state = 'submit'
+		self.isSubmitted = True
 		return True
 
 	@api.multi
 	def act_draft(self):
 		self.state = 'draft'
+		self.isApproved = False
+		self.isSubmitted = False
 		return True
 
 	@api.multi
 	def act_approve(self):
 		self.state = 'approve'
+		self.isApproved = True
 		return True
