@@ -8,7 +8,7 @@
 		<field name="arch" type="xml">
 			<form string="Form Company Submission">
 				<header>
-					<button string="Approve" type="object" name="act_approve" states="draft"/>
+					<button string="Approve" type="object" name="act_approve" states="draft" groups="openeducat_core.group_op_faculty"/>
 					<field name="state" widget="statusbar" statusbar_visible="draft,approve"/>
 				</header>
 				<sheet>
